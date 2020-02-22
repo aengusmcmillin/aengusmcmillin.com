@@ -12,7 +12,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "2.18.25",
+    "gatsby": "2.19.7",
     "gatsby-plugin-google-analytics": "^2.1.34",
     "gatsby-theme-aengus-blog": "git+https://github.com/aengusmcmillin/gatsby-theme-aengus-blog.git",
     "react": "^16.12.0",
