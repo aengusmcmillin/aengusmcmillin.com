@@ -65,20 +65,19 @@ const Square = styled("div")`
 
 
 export default () => (
-    <Header>
-      <Nav>
-        <TitleLink href="/">
-          <Square />
-          <TitleText>Aengus McMillin</TitleText>
-        </TitleLink>
-        <NavItemContainer>
-          {NavItems.map(({ name, location }) => (
-            <NavLink key={name} to={location}>
-              {name}
-            </NavLink>
-          ))}
-        </NavItemContainer>
-      </Nav>
-    </Header>
-)
-
+  <Header>
+    <Nav>
+      <TitleLink href="/">
+        <Square />
+        <TitleText>Aengus McMillin</TitleText>
+      </TitleLink>
+      <NavItemContainer>
+        {NavItems.map(({ name, location }) => (
+          <NavLink key={name} to={location}>
+            {name}
+          </NavLink>
+        ))}
+      </NavItemContainer>
+    </Nav>
+  </Header>
+);
