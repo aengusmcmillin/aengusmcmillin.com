@@ -1,0 +1,74 @@
+---
+date: 2020-03-11
+title: "Networking for Game Development"
+slug: networking-game-development
+published: true
+---
+
+## **Introduction**
+
+Video games can be very much a social experience. People like to hop in a game with their friends and either battle it out brawler style, join forces to destroy wave after wave of nazi zombies, or progress through a compelling story. But most people don't have a friend group always available right there in their living room, and so they take to the internet. There are many games that are single player, but it seems like the majority have some level of online cooperation or competition, which means somebody needs to build the netcode for all those games.
+
+I have been spending the last few months working on the networking for a game, and learning about netcode in the process (from scratch, I knew basically nothing about it three months ago). In that time I have gone through quite a few resources trying to pick up tips, techniques, pitfalls, patterns, and architectural options to apply to my project. And I want to share those resources and some of the contained knowledge here. In the future I hope to write more posts about these different topics, this is an incredibly rich space that could still do with some more curation. From my own experience trying to learn all of this, there doesn't appear to be any single definitive place that has the breadth of information needed to begin implementing networking. But for now, a summary of existing resources feels like the right starting point
+
+## **Game Networking Resources**
+
+### **[Gaffer On Games](http://gafferongames.com/)**
+
+This guy is great. Back when I was learning more about game development as a teen, I was already enjoying reading this site. Now I have revisited his materials heavily over the last few months and reread most of the articles at least 2 or 3 times because they are so detail rich and contain a massive amount of information on the various approaches that can be taken towards netcode.
+
+I would recommend starting with 'What Every Programmer Needs To Know About Game Networking'. It's been a commonly recommended article since it was published 10 years ago, and it does a great job of summarizing the history of game networking, some of the biggest challenges, and how those problems are being solved in a variety of different types of games today. After that read through the [Networked Physics series](https://gafferongames.com/categories/networked-physics/) for lots of great insights into how to deal with complicated systems over a network. In that series he covers a variety of different strategies for processing physics, handling input, dealing with latency and packet loss, and by the end of the series has an approach towards a complex simulation that performs well even under rather terrible circumstances. And finally, every post on his site is pretty great, so explore through and spend time on posts that seem interesting.
+
+I would say my biggest issue with his stuff is that it can be a little bit tricky to figure out how to take the great ideas and more concretely incorporate them into an actual project. He doesn't go much into code architecture or cover those more low level nitty gritty details, and there isn't any full project source code available (or maybe there is for patreons?). This means, at least for me, going through the posts multiple times as I develop to get more insight into how to take the next step in development. But overall this is an incredible resource, and the lack of those specifics makes his site totally timeless, I suspect that in another 10 years his posts will continue to be some of the best out there.
+
+### **[Gabriel Gambetta](https://www.gabrielgambetta.com/client-server-game-architecture.html)**
+
+This is not nearly as jam packed of a resource as gafferongames, but it is nice that it walks through the whole process with some simple examples, and even provides a code sample at the end with a demo project. Gabriel also includes great diagrams that really help internalize exactly what is happening in each of the described situations. It's also a single series that goes from beginning to end, introducing concepts sequentially, which really helps building up the mental model and keeping everything very understandable the whole time.
+
+One suggestion I have for this resource, consider actually building your own mini project as you work through this using the networking setup that you will be using for your larger project. The ideas are very concrete, and it shouldn't be that difficult to take each post and figure out how to implement some of the ideas as you go through. That makes this a great followup in some ways to the gafferongames material.
+
+### **[Tribes Networking Model](https://www.gamedevs.org/uploads/tribes-networking-model.pdf)**
+
+This is an incredibly in depth document describing exactly how the networking system in Tribes works. Obviously the details of any game are going to be specific to that game, but I took a lot of inspiration from the different layers of the networking system that they employed, and have incorporated a similar approach in my own project.
+
+The core of the Tribes system is that the networking is broken out into three main layers: A platform packet module which handles actual sending and receiving of packets based on details of how the current OS/platform needs to do this, a connection manager to take care of directing outgoing packets to the right place and figuring out where incoming packets are coming from, and a stream manager that is in charge of actually taking packets and turning them into game behavior, and vice versa. There is a lot more juicy detail included in the paper, but that high level approach is something that made a lot of sense for me to incorporate in my project. It has made it much easier to have all the same code whether or not online multiplayer is enabled, and easily just swap out the packet module to avoid sending anything to the internet. It may not work for your situation, but it's an in-depth enough paper that there are likely to be concrete approaches and decisions that you can steal for your own work.
+
+One thing I will say, it is very dense material. As with most of these resources, going through them over and over as your understanding of the space improves will be critical.
+
+### **[Source Multiplayer Networking](https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking)**
+
+This resource gives a ton of insight into how Valve games like CS:GO approach networking. Starting with a brief summary of client-server terminology and networking, and moving into more complex topics such as entity interpolation, input prediction, and lag compensation. It doesn't dive super deep into any one of these, and the resources listed above are likely to have more in-depth information on specific topics, but I think as far as a 10-15 minute read to get information on the whole scope of a game, this is a great place to start!
+
+### **[I Shot you First: Networking the Gameplay of Halo Reach(video)](https://www.youtube.com/watch?v=h47zZrqjgLc)**
+
+These next resources are all GDC talks. Being in the form of 1-2 hour videos they can be hard to skim for tidbits of information, but all of them have lots of great information so I would recommend sitting through them.
+
+This one, originally given back in 2011, is about how Halo Reach handled networking. Obviously with a shooter like this there are a lot of tough decisions to be made about how to reconcile lagged decision making in a fast paced environment, and this talk goes over some of the strategies used by Bungie to resolve those decisions. This is a really beefy two hour talk, going over architectural decisions, netcode strategies, as well as measuring and optimizing network performance. There isn't much actual code, but there are tons of concrete details of how the game layers are structured, the responsibilities of each layer, how data is structured and prioritized, etc... It also gets into several specific examples, things like what happens when a grenade is thrown, activating equipment buffs, and dealing with resolving whether or not a player was shot. And even after all that there are numerous other techniques described, tools demonstrated, and strategies discussed for performance, optimizations, and reliability.
+
+### **[Overwatch Gameplay and Netcode (video)](https://www.youtube.com/watch?v=W3aieHjyNvw)**
+
+Great GDC talk (from 2017) going over how Overwatch approaches gameplay and netcode. A large portion of this talk is actually barely about networking, and is instead about the more generic engine architecture that Overwatch is built upon. It uses a pretty complex seeming ECS ([entity component system](https://en.wikipedia.org/wiki/Entity_component_system)), and for a portion of the video they discuss some information about how that is structured and what types of components and systems it contains. But this groundwork is super important because the architecture dictates how they approach netcode. After that is in place the speaker gets into details about how they build networking into their systems, and structure data and game logic around a client-server architecture. Then there are a bunch of examples given, details discussed, and several challenges + strategies.
+
+Many of the ideas in this talk are a little less general than in others. Because ECS systems are less common than a more traditional architecture many of the ideas won't be as applicable for a wide array of games, but there is still a fair bit of valuable information to be gleaned. And personally, I think for anyone that *is* building an ECS based game, this is probably one of the most valuable talks you could ever watch, for network programming or otherwise.
+
+### **Similar: [Overwatch Netcode Developer Talk (video)](https://www.youtube.com/watch?v=vTH2ZPgYujQ)**
+
+This covers some of the same content as the previous resource, but at a higher and more abstract level, and doesn't go into nearly as much detail or breadth. Still a nice shorter and kinda fun video to watch for a succinct summary of how Overwatch works.
+
+### **[Physics of Rocket League (video)](https://www.youtube.com/watch?v=ueEmiDM94IE)**
+
+This GDC talk from 2018 is a bit different from the others. Both of the other talks have lots of information about general gameplay issues and how to solve the sort of things that might come up in many different genres. This talk is different, Rocket League is a more complex physics simulation than most, so the problems they encounter are relatively focused around ensuring that physics simulation works well in a networked environment. There is some more general networking information, but a lot of the talk discusses ways to mess with physics to improve the experience, unique challenges with fast paced car physics, and other things like that. It's still a valuable talk, especially if you are working on a very physics based game, but if not it probably won't give quite as concrete of insight as the other talks.
+
+## **Other Resources**
+
+### **[Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/)**
+
+Although not about game programming, this is widely considered one of the definitive resources on network programming. If you want more technical details on what sockets are and how to use them, details on ip addresses and other networking topics, as well as references and usage tips on various networking related system calls, along with a bunch of more advanced topics, this is the place to go! I haven't read through all of it, but I have referred to it a couple of times when wanting to understand a little bit more about the code that I'm writing.
+
+### **[16bpp C# Networking Tutorial](https://16bpp.net/tutorials/csharp-networking/)**
+
+Since I'm developing a Unity game I have been doing all of my network programming using C# sockets. This tutorial series is the best one I have found for that. It covers a variety of different topics, but at the very least going through the UDP sections are likely to be very useful for anyone else writing netcode using UDP sockets.
+
+## **This is a living post**
+
+I hope that this was a useful collection of resources for any of you getting started with game programming. I plan for this to be a living post, and I hope to add resources, improve upon the notes, and generally build this up more and more over time. As such, if you have any feedback or suggestions for resources I left out, send me a tweet (@aengusmcmillin) or an email (hello@aengusmcmillin.com). I will read every message and will definitely look at any resources sent my way.
