@@ -1,0 +1,183 @@
+---
+date: 2019-01-22
+title: "Kotlin Part 2: Basic Syntax and First Project"
+slug: kotlin-syntax-first-project
+published: true
+---
+
+Ok, so now that we have a working hello world program (yay!), today I want to go over the first proper project we will be building in this series, start covering the syntax of Kotlin, and using that syntax to make the first steps in the construction of that project.
+
+## Project #1: Text Adventure
+
+To begin with we are going to be building a text adventure. The reason for this project is that it doesn't need to be super complicated, doesn't require any advanced features or require saving any state, just basic language features and some console IO, and it is fun and can be pretty much endlessly expanded if you find it interesting. 
+
+The one we will be building is going to be relatively basic, I don't intend to make a deep compelling game, but rather to build a small complete experience to demonstrate the topics needed without overly simplifying things.
+
+Because I want to keep this small, I will be keeping this down to a pretty self contained adventure with an intro, only a couple of steps that can be done, and then a conclusion. The story pacing will be terrible, but it should give an idea of how to approach this sort of project should you choose to expand upon it or completely make up your own.
+
+Here is a basic script for how a playthrough might look. At each of the decision points there will be different branches to build out, and we will introduce those as we build the project, but wanted to give an idea of what we will be building up front.
+
+    Welcome to Alanor. You have just arrived from Terra on the Gamma
+    6 shuttle. 
+    
+    Immediately upon stepping out of the shuttle you notice that the air is thinner
+    than on Terra, and the gravity ever so slightly stronger. This will take some
+    getting used to.
+    
+    In the shuttle station, along with a variety of other passengers arriving
+    with you or waiting for another shuttle, you see an *exit door*, a 
+    *vending machine*, and a *bathroom*. What do you want to do? 
+    
+    $ Go to the vending machine
+    
+    In the vending machine you see some very boring looking fare. There are *chips* ($20),
+    some sort of *candy* ($30), and *nutrient paste* ($50). Do you wish to get anything?
+    
+    $ Nutrient paste
+    
+    You scan your payment tag on the machine and out drops a pouch of paste. It is 
+    a gray color, slightly grainy, and tests slightly foul, but it is filling.
+    
+    What do you want to do next? 
+    
+    $ Head out the exit
+    
+    You walk to the exit, open the door, and walk out into the light of the two
+    suns of Alanor. You are immediately met by someone you recognize as the recruiter
+    who hired you for the position out here.
+    
+    You join them in their car, and head out for your new life on a new world.
+    
+    GAME OVER
+    
+    Do you wish to play again?
+    
+    $ No
+    $
+
+Obviously in any published game there would be more than a single room to explore, but for our purposes this should do the trick, and between the vending machine and bathroom there should be enough complexity to make modeling it interesting. 
+
+## Hello World Syntax Basics
+
+Now that we know what we are building we need to start figuring out how to build it! Since we already have a project ready in IntelliJ that isn't doing much we are just going to start with that program, remove the Hello World printing, and go from there. But first, let's take a look again at that code and discuss exactly what is going on:
+
+    fun main() {
+        println("Hello World")
+    }
+
+Although it is pretty basic, there are still a couple of key things being introduced.
+
+First of all is function definitions. For those unfamiliar, functions are essentially an operation that can be performed. They can take in parameters, do some work, and might spit out a result. The `fun main() {` line is declaring a function called main that takes no parameters and doesn't return anything, but when called it can do work. The work done is wrapped in the curly brackets.
+
+The second thing happening is a function call to `println()`. This call takes in a string and doesn't return anything, but what it does do is spit out the passed in string to the console. Given the nature of the text based adventure game we will be calling this function a lot.
+
+And finally, the third thing to be aware of here is something a little bit less obvious, but the `main` function is a bit special. In Kotlin, a standalone function called `main` will be used as the entry point for a file. By entry point, I simply mean that when you run a file, as we did in the last lesson, the `main` function will automatically be called, and when it reaches the end the program will quit. Every program needs some sort of entry point, and although there are more complicated ways to set this up that we may address in the future, for now expect almost all of the projects we build to have a simple `main` function as the basis.
+
+Now that you know what this all does, you can go ahead and delete the `println` line, leaving yourself with a nice empty main() method to start working in.
+
+Looking at the project spec above, there is probably one unsolved issue that really stands out, and one that might be a bit more subtle. The obvious one: we need to be able to take user input, how do we do that? And the less obvious: we need to store state about what is happening! Let's address the second problem first because the answer to that is important to capturing user input. For now, we will be capturing state with something called Variables.
+
+Looking at the project spec above, there is probably one unsolved issue that really stands out, and one that might be a bit more subtle. The obvious one: we need to be able to take user input, how do we do that? And the less obvious: we need to store state about what is happening!
+
+Let's start with the second problem because the solution is important to the first. The answer to storing state is in the use of Variables. 
+
+## Variables
+
+In programming, a variable is essentially a named *thing* that stores data. Depending on the programming language, these can behave differently and have different restrictions, but whatever language you are looking at, it will almost certainly have some type of variables.
+
+In Kotlin, there are two types of variables available, either a mutable `var`, or an immutable `val`.[^(1)] Kotlin is also a strongly typed language but with type inference, which, in plainer english, means that all variables have some type that the compiler knows about (not just determined at runtime), but that those types can be figured out by the compiler based on context and don't always need to be declared explicitly. 
+
+
+But to take a step back, now we are introducing the idea of types? Types are just that, the *type* of the data that is being represented. So an `Int` type is an integer number, a `Boolean` type represents a true/false value, a `String` type represents a string of text, etc... I won't get too deep into the details now, and we will revisit all of this later, but for now just know that that is what we are referring to when talking about types.
+
+I suppose a couple of examples would probably help here. Here are a couple of code blocks demonstrating variables and types.
+
+Oh yeah, one more thing first. Programming languages almost always support comments in the code that will be stripped out in compilation. Kotlin provides the double slash `//` , and everything after that is a comment. I will be using that a lot throughout this series in my code blocks to describe what is happening without breaking the code should you choose to test it in IntelliJ. Ok, back to the examples:
+
+    var testInt = 2 // Inferred to be an Int type
+    testInt = 5 // var is mutable and therefore can be changed
+    
+    
+    var testBool = true // Inferred to be a Boolean type
+    testBool = 5 // COMPILER ERROR! Can't assign an Int value to a Boolean type
+    
+    
+    val testString = "foo" // This is inferred to be a String type
+    testString = "bar" // COMPILER ERROR! val is immutable and can't be changed
+    
+    
+    val helloText = "Hello World"
+    println(helloText) // Same as our original, with the text pulled out to a variable
+
+As you can see, the syntax is relatively straightforward, and hopefully those examples are understandable. That sort of basic syntax should cover ~80% of what you will need, and we will cover more advanced details as the series progresses.
+
+Now that we know how to store state in variables, the next thing we need is to be able to capture user input so the user can make selections to progress through the game. To do this we will be introducing a new function: `readLine`
+
+## User Input with readLine
+
+`readLine` is a function (same as `println`) that listens for user input on the console and returns whatever text was entered. Since function syntax may still be a bit unfamiliar, here are a few examples to help reinforce what has been covered:
+
+    val textEntered = readLine() // This will store whatever you enter in 'textEntered'
+    
+    var mutableTextEntered = readLine()
+    // Do something with the text
+    mutableTextEntered = readLine() // Since mutableTextEntered is a var it can be overridden
+
+We will be using that function, storing the results in a `val`, and for now simply printing the entered text and returning out of the game. Go ahead and paste or type this code block into your empty `main()` method, and run it.
+
+    println("Welcome to Alanor. You have just arrived from Terra on the Gamma 6 shuttle.")
+    println("")
+    println("Immediately upon stepping out of the shuttle you notice that the air is thinner")
+    println("than on Terra, and the gravity ever so slightly stronger. This will take some")
+    println("getting used to.")
+    println("")
+    println("In the shuttle station, along with a variety of other passengers arriving")
+    println("with you or waiting for another shuttle, you see an *exit door*, a")
+    println("*vending machine*, and a *bathroom*. What do you want to do?")
+    
+    val selection = readLine() // IMPORTANT LINE: This will read in user input and store it
+    println("You selected: $selection")
+
+You should see something like this in your IntelliJ output, with 'exit door' replaced by whatever you decide to enter.
+
+    Welcome to Alanor. You have just arrived from Terra on the Gamma 6 shuttle.
+    
+    Immediately upon stepping out of the shuttle you notice that the air is thinner
+    than on Terra, and the gravity ever so slightly stronger. This will take some
+    getting used to.
+    
+    In the shuttle station, along with a variety of other passengers arriving
+    with you or waiting for another shuttle, you see an *exit door*, a
+    *vending machine*, and a *bathroom*. What do you want to do?
+    **exit door**
+    You selected: exit door
+    
+    Process finished with exit code 0
+
+Hopefully at this point all of that code makes sense. It is basically just printing lines to spit out text setting the stage, reading in some input, and then printing that out. The only new thing here is the `$selection` syntax on the last line. Those are called String Templates. They are essentially a bit of code embedded in a string that gets evaluated and swapped in. So including `$selection` just replaces that with the contents of the selection val.
+
+At this point this post is getting a bit verbose, and we have introduced a couple new concepts, so probably best to wrap it up here. But first, since this is a reasonable standalone addition to the project, we need to git committed.
+
+## Commit to Git
+
+In order to stamp this change and keep it in your version control history you need to commit it to Git.
+
+As demonstrated last time, committing is a two step process. First you stage all the changes with `git add .`, and then you commit with `git commit -m "<SOME MESSAGE"`.
+
+So do the same thing here, choosing a decent commit message so that you can have a good idea of what was done at this stage. Something along these lines:
+
+    $ git add .
+    $ git commit -m "Print intro and capture some user input. Kotlin Guide Part 2"
+
+And you are good to go! If you ever want to look at your commit history, just enter `git log` and it will print out a list of your commits.
+
+## Next Time
+
+In part 3 I want to start introducing more structure to the game. We need to be able to store more complicated state
+
+[^(1)]:
+    **A note on mutability**
+    
+    For those unfamiliar with the term, mutable simply means that the value can be changed, whereas immutable means that once the value has been set it can't later be changed.
+
+    Mutability is often necessary, but there are benefits to making something immutable as well. It can simplify the logic of your code and make it really easy to tell that once the value has been set you don't need to worry about it changing afterwards. So whenever possible it is usually advisable to make your code immutable.

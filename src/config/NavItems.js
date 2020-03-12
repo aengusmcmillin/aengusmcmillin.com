@@ -1,9 +1,13 @@
 
 const NavItems = [
-    // {
-    //     name: "Articles",
-    //     location: "/",
-    // }
+    {
+        name: "start here",
+        location: "/",
+    },
+    {
+        name: "articles",
+        location: "/articles",
+    }
 ];
 
 export default NavItems;

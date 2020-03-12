@@ -12,15 +12,21 @@ const Wrapper = styled('main')`
   display: flex;
   flex-direction: column;
 
+  h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+    max-width: 600px;
+    vertical-align: middle;
+  }
+
   p {
     width: 100%;
-    max-width: 80ch;
+    max-width: 600px;
     vertical-align: middle;
   }
 
   ul {
     width: 100%;
-    max-width: 80ch;
+    max-width: 600px;
   }
 `;
 

@@ -10,7 +10,8 @@ const Footer = styled("footer")`
 
 const Copyright = styled("div")`
   display: block;
-  padding: 10px;
+  padding: 4px 0px 4px 30px;
+  font-size: 10pt;
 `;
 
 export default () => (

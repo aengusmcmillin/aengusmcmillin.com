@@ -1,0 +1,14 @@
+---
+date: 2019-01-25
+title: "Kotlin Part 3: Structural Elements"
+slug: kotlin-structural-elements
+published: false
+---
+
+# Introduction
+Last time we setup some basics for the application, including printing an intro and capturing/storing user input. Those two things will be involved in pretty much everything the game does, expect to see lots of other code like that. But today we need to start taking things a step further, and introduce structural elements to control the flow of the game and allow for the various branches and paths through the game. 
+
+## Classes
+I think the best way to begin this section is with a discussion on classes. A class is essentially a custom type (you remember types from last time right?), that has its own set of associated variables and functions. These are used all over the place to provide a layer of abstraction over a set of functionality. Technically, generally you could do everything you would need to with nothing more than a bunch of functions and variables, but having the ability to associate a set of variables with a set of functions and assign a name to that association is quite valuable, and it can make code much cleaner and easier to understand.
+
+For our project today we are going to be writing some classes to represent the different areas of our game, and encapsulate the functionality available at t

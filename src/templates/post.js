@@ -15,6 +15,26 @@ const BlogLayout = styled(Layout)`
 
 const Blog = styled.article`
   margin-bottom: 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+    max-width: 600px;
+    vertical-align: middle;
+  }
+
+  p {
+    width: 100%;
+    max-width: 600px;
+    vertical-align: middle;
+  }
+
+  ul {
+    width: 100%;
+    max-width: 600px;
+  }
 `;
 
 export default function PostTemplate({data: { mdx }}) {
