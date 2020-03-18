@@ -28,6 +28,19 @@ const Wrapper = styled('main')`
     width: 100%;
     max-width: 600px;
   }
+
+  img {
+    max-height: 100%;
+    max-width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  em {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
 `;
 
 const Main = ({ children, className }) => (
