@@ -9,6 +9,7 @@ const Post = styled(Link)`
   display: block;	
 `;	
 
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -27,6 +28,7 @@ export default () => (
               frontmatter {
                 title
                 slug
+                date
               }
             }
           }
@@ -37,6 +39,7 @@ export default () => (
       const Posts = data.posts.nodes.map(node => (
         <Post to={node.childMdx.frontmatter.slug}>
           <h3>{node.childMdx.frontmatter.title}</h3>
+          <PostDate>{node.childMdx.frontmatter.date}</PostDate>
           <p>{node.childMdx.excerpt}</p>
         </Post>
       ));

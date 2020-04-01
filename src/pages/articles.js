@@ -8,12 +8,35 @@ const AllPosts = styled.div`
 
 const Post = styled(Link)`	
   display: block;	
+
 `;	
+
+const PostTitle = styled.h3`
+  color: #333333;
+
+  ${Post}:hover & {
+    color: #777777;
+  }
+`;
+
+const PostDate = styled.div`
+  width: 100%;
+  max-width: 600px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 11pt;
+  color: #888888;
+
+  ${Post}:hover & {
+    color: #AAAAAA;
+  }
+`
 
 const ArticlesPage = ({data}) => {
       const Posts = data.posts.nodes.map(node => (
         <Post to={node.childMdx.frontmatter.slug}>
-          <h3>{node.childMdx.frontmatter.title}</h3>
+          <PostTitle>{node.childMdx.frontmatter.title}</PostTitle>
+          <PostDate>{node.childMdx.frontmatter.date}</PostDate>
           <p>{node.childMdx.excerpt}</p>
         </Post>
       ));
@@ -38,7 +61,7 @@ export const query = graphql`
                childMdx {
                  excerpt(pruneLength: 250)
                  frontmatter {
-                   date
+                   date(formatString: "MMMM D, Y")
                    title
                    slug
                  }

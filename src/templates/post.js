@@ -38,12 +38,21 @@ const Blog = styled.article`
   }
 `;
 
+const PostDate = styled.div`
+  width: 100%;
+  max-width: 600px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 11pt;
+`
+
 export default function PostTemplate({data: { mdx }, pageContext}) {
     return (
         <BlogLayout>
           <Blog>
             <SEO post={{ title: mdx.frontmatter.title, path: pageContext.postPath }} />
             <h1>{mdx.frontmatter.title}</h1>
+            <PostDate>{mdx.frontmatter.date}</PostDate>
             <MDXRenderer>{mdx.body}</MDXRenderer>
           </Blog>
         </BlogLayout>
@@ -56,6 +65,7 @@ export const pageQuery = graphql`
         body
         frontmatter {
             title
+            date(formatString: "MMMM Do, YYYY")
         }
     }
   }
