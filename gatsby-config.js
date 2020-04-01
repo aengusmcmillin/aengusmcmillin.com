@@ -11,7 +11,8 @@ module.exports = {
     description: ``,
     titleTemplate: ``,
     image: ``,
-    url: ``
+    url: ``,
+    baseUrl: `https://aengusmcmillin.com`
   },
   plugins: [
     {

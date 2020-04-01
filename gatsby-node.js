@@ -33,7 +33,10 @@ exports.createPages = async ({ actions, graphql }) => {
             createPage({
                 path: node.childMdx.frontmatter.slug,
                 component: require.resolve(`./src/templates/post.js`),
-                context: { slug: node.childMdx.frontmatter.slug }
+                context: { 
+                  slug: node.childMdx.frontmatter.slug,
+                  postPath: node.childMdx.frontmatter.slug
+                }
             });
         }
     });

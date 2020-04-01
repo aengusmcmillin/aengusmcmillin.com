@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
+import SEO from "../components/SEO";
 
 const BlogLayout = styled(Layout)`
   margin: 5em auto 6rem;
@@ -37,10 +38,11 @@ const Blog = styled.article`
   }
 `;
 
-export default function PostTemplate({data: { mdx }}) {
+export default function PostTemplate({data: { mdx }, pageContext}) {
     return (
         <BlogLayout>
           <Blog>
+            <SEO post={{ title: mdx.frontmatter.title, path: pageContext.postPath }} />
             <h1>{mdx.frontmatter.title}</h1>
             <MDXRenderer>{mdx.body}</MDXRenderer>
           </Blog>
