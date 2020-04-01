@@ -20,6 +20,18 @@ module.exports = {
         trackingId: process.env.ANALYTICS_TRACKING_ID
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Aengus McMillin`,
+        short_name: `Aengus`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#c95900`,
+        icon: `static/icon.png`,
+        display: `standalone`,
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-emotion",
     "gatsby-plugin-sharp",
