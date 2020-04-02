@@ -33,7 +33,7 @@ const PostDate = styled.div`
 `
 
 const ArticlesPage = ({data}) => {
-  const Posts = data.posts.nodes.map(node => (
+  const Posts = data.posts.nodes.sort((a, b) => a.childMdx.frontmatter.date - b.childMdx.frontmatter.date).map(node => (
     <Post to={node.childMdx.frontmatter.slug}>
       <PostTitle>{node.childMdx.frontmatter.title}</PostTitle>
       <PostDate>{node.childMdx.frontmatter.displayDate}</PostDate>
@@ -55,7 +55,10 @@ export const query = graphql`
         relativePath: { glob: "**/*.{md,mdx}" }
         childMdx: { frontmatter: { published: { eq: true } } }
       }
-      sort: { fields: [childMdx___frontmatter___date], order: DESC }
+      sort: { 
+        fields: childMdx___frontmatter___date, 
+        order: DESC 
+      }
     ) {
       nodes {
         name
