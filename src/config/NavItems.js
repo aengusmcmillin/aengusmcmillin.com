@@ -1,8 +1,8 @@
 
 const NavItems = [
     {
-        name: "start here",
-        location: "/",
+        name: "notes",
+        location: "/notes",
     },
     {
         name: "articles",

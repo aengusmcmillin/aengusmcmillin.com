@@ -33,42 +33,44 @@ const PostDate = styled.div`
 `
 
 const ArticlesPage = ({data}) => {
-      const Posts = data.posts.nodes.map(node => (
-        <Post to={node.childMdx.frontmatter.slug}>
-          <PostTitle>{node.childMdx.frontmatter.title}</PostTitle>
-          <PostDate>{node.childMdx.frontmatter.date}</PostDate>
-          <p>{node.childMdx.excerpt}</p>
-        </Post>
-      ));
-    return (
-      <Layout>
-        <AllPosts>{Posts}</AllPosts>
-      </Layout>
-    );
+  const Posts = data.posts.nodes.map(node => (
+    <Post to={node.childMdx.frontmatter.slug}>
+      <PostTitle>{node.childMdx.frontmatter.title}</PostTitle>
+      <PostDate>{node.childMdx.frontmatter.displayDate}</PostDate>
+      <p>{node.childMdx.excerpt}</p>
+    </Post>
+  ));
+  return (
+    <Layout>
+      <AllPosts>{Posts}</AllPosts>
+    </Layout>
+  );
 }
 
 export const query = graphql`
-         query {
-           posts: allFile(
-             filter: {
-               relativePath: { glob: "posts/**/*.{md,mdx}" }
-               childMdx: { frontmatter: { published: { eq: true } } }
-             }
-             sort: { fields: [childMdx___frontmatter___date], order: DESC }
-           ) {
-             nodes {
-               name
-               childMdx {
-                 excerpt(pruneLength: 250)
-                 frontmatter {
-                   date(formatString: "MMMM D, Y")
-                   title
-                   slug
-                 }
-               }
-             }
-           }
-         }
-       `;
+  query {
+    posts: allFile(
+      filter: {
+        sourceInstanceName: { eq: "posts" }
+        relativePath: { glob: "**/*.{md,mdx}" }
+        childMdx: { frontmatter: { published: { eq: true } } }
+      }
+      sort: { fields: [childMdx___frontmatter___date], order: DESC }
+    ) {
+      nodes {
+        name
+        childMdx {
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date
+            displayDate: date(formatString: "MMMM D, Y")
+            title
+            slug
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default ArticlesPage

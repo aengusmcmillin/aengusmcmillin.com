@@ -6,9 +6,30 @@ exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
     const result = await graphql(`
       query {
+        notes: allFile(
+          filter: {
+            sourceInstanceName: { eq: "notes" }
+            relativePath: { glob: "**/*.{md,mdx}" }
+          }
+          sort: { fields: relativePath, order: DESC }
+        ) {
+          nodes {
+            id
+            relativePath
+            childMdx {
+              frontmatter {
+                title
+                slug
+                author
+                published
+              }
+            }
+          }
+        }
         posts: allFile(
           filter: {
-            relativePath: { glob: "posts/**/*.{md,mdx}" }
+            sourceInstanceName: { eq: "posts" }
+            relativePath: { glob: "**/*.{md,mdx}" }
             childMdx: { frontmatter: { published: { eq: true } } }
           }
           sort: { fields: relativePath, order: DESC }
@@ -29,17 +50,29 @@ exports.createPages = async ({ actions, graphql }) => {
 
     const posts = result.data.posts.nodes;
     posts.forEach(node => {
-        if (node.childMdx.frontmatter.published == true) {
-            createPage({
-                path: node.childMdx.frontmatter.slug,
-                component: require.resolve(`./src/templates/post.js`),
-                context: { 
-                  slug: node.childMdx.frontmatter.slug,
-                  postPath: node.childMdx.frontmatter.slug
-                }
-            });
+      createPage({
+        path: node.childMdx.frontmatter.slug,
+        component: require.resolve(`./src/templates/post.js`),
+        context: { 
+          slug: node.childMdx.frontmatter.slug,
+          postPath: node.childMdx.frontmatter.slug
         }
+      });
     });
+
+    const notes = result.data.notes.nodes;
+    notes.forEach(note => {
+      var slug = note.childMdx.frontmatter.slug
+      var path = `notes/${slug}`
+      createPage({
+        path: path,
+        component: require.resolve(`./src/templates/note.js`),
+        context: {
+          slug: slug,
+          postPath: path
+        }
+      })
+    })
 };
 
 exports.onPreBootstrap = ({ store }, options) => {
