@@ -1,0 +1,106 @@
+---
+date: 2020-04-10
+title: "Kotlin Part 3: Control Flow & Equality Comparison"
+slug: kotlin-part-3
+published: true
+---
+
+Welcome to part 3. Last time we got some basic printing and user input happening and went over variables. But now, we need to actually start doing different things depending on what the user types. In order to do that, there are two concepts that I want to introduce: control flow, and equality comparison.
+
+### Control Flow
+
+[Control flow](https://en.wikipedia.org/wiki/Control_flow) is controlling the order in which the code of your program is executed. Examples of control flow include looping through statements more than once, branching between several different options, and returning early from a function. I will be going through most of these throughout the series, but for now I want to focus on one in particular: branching between options with If Statements.
+
+If Statements are a way of evaluating the state of your program, and choosing between several different code paths to go down. The way it works is that you pass a Boolean condition to an `if` statement, and follow that up by a block of code that will be run if the condition is true, and optionally an `else` block that will be run otherwise.
+
+    val condition = ... // Some boolean result
+    
+    if (condition) {
+    	println("condition is true")
+    } else {
+    	println("condition is false")
+    }
+
+It is also possible to chain if-else statements to branch between more than two options.
+
+    val condition = ... // Some boolean result
+    val condition2 = ... // Some other boolean result
+    
+    if (condition) {
+      println("condition is true")
+    } else if (condition2) {
+      println("condition2 is true")
+    } else {
+      println("neither condition is true")
+    }
+
+We will be using if statements to evaluate the selection and decide what to do next, but before we can do that, we need to actually be able to determine what the user entered. To do that, we need equality comparison.
+
+### Equality Comparison
+
+Equality comparison is exactly what it sounds like, comparing things to see if they are equal. To do this we are introducing a new bit of syntax, the double-equals `==` equality operator. What the equality operator does is compares the left hand side vs the right, and returns a `true` Boolean value if the two sides are equal, and `false` otherwise. 
+
+Examples
+
+    val integerComparison = 2 + 2 == 4
+    println(integerComparison) // prints true
+    
+    val bool1 = true
+    val bool2 = false
+    val booleanComparison = bool1 == bool2
+    println(booleanComparison) // prints false
+    
+    val stringVal = "foo"
+    val stringComparison = stringVal == stringVal
+    println(stringComparison) // prints true
+
+Because the equality operator returns a boolean, the result can be passed to an if statement to do branching. This is what we will be doing in our code. A simple example might look like this:
+
+    val input = readLine()
+    if (input == "say hello") {
+      println("Hello World!")
+    } else {
+      println("I don't know what you want")
+    }
+
+### Branching User Flow
+
+Now we are ready to apply the concepts above to our program. You should hopefully understand the rough idea, so I'm going to present a block of code showing the new state of the 'main' function, and give a brief summary of what is happening.
+
+    fun main() {
+        println("Welcome to Alanor. You have just arrived from Terra on the Gamma 6 shuttle.")
+        println("")
+        println("Immediately upon stepping out of the shuttle you notice that the air is thinner")
+        println("than on Terra, and the gravity ever so slightly stronger. This will take some")
+        println("getting used to.")
+        println("")
+        println("In the shuttle station, along with a variety of other passengers arriving")
+        println("with you or waiting for another shuttle, you see an *exit door*, a")
+        println("*vending machine*, and a *bathroom*. What do you want to do?")
+    
+        val selection = readLine()
+        if (selection == "exit door") {
+            println("You walk to the exit, open the door, and walk out into the light of the two")
+            println("suns of Alanor. You are immediately met by someone you recognize as the recruiter")
+            println("who hired you for the position out here.")
+            println("")
+            println("You join them in their car, and head out for your new life on a new world.")
+        } else if (selection == "vending machine") {
+            println("In the vending machine you see some very boring looking fare. There are *chips* ($20),")
+            println("some sort of *candy* (\$30), and *nutrient paste* (\$50).")
+        } else if (selection == "bathroom") {
+            println("You see three sinks with mirrors, and a bathroom stall with a closed door.")
+        } else {
+            println("Unhandled selection: $selection")
+        }
+    }
+
+The first section of `println` statements is the same as last time, the difference comes after taking in the selection. Last time you simply printed the selection and returned. Now we are using control flow and equality comparisons to branch, and take a different path depending on what the user enters.
+
+If you run this a few times, you will see that you can type one of the options and the program will respond appropriately. From our spec in the last post, this mechanism is the bulk of the program! If you wanted, you could just about brute force the entire thing with nothing more than you have already been shown.
+
+There are a couple of problems still though. Already you can see that this main function is starting to grow and get a little bit complicated. Imagine what will happen when you begin introducing more options, and introducing further branching down each chain? Plus, we don't currently have a way of backing out of an option and going back. So, for example, when the user is done at the vending machine, there is no way of going back and asking where they want to go next without duplicating a bunch of println statements.
+
+Both of these issues will be solved in the next couple of lessons. 
+
+To first issue will be solved by introducing structure into the program with classes, and the second will be solved by combining classes with new type of control flow: loops.
