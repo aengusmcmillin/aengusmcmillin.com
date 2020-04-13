@@ -41,10 +41,20 @@ const BrainNote = styled.article`
 
 export default function BrainTemplate({data: { brainNote }, pageContext}) {
     let references = []
+    let referenceBlock
     if (brainNote.inboundReferences != null) {
         references = brainNote.inboundReferences.map(ref => (
             <a href={ref}>{ref}</a> 
         ));
+
+        if (references.length > 0) {
+            referenceBlock = (
+                <>
+                    <h1>Linked References</h1>
+                    {references}
+                </>
+            )
+        }
     }
 
     return (
@@ -53,8 +63,7 @@ export default function BrainTemplate({data: { brainNote }, pageContext}) {
             <SEO post={{ title: `${brainNote.title}`, path: pageContext.postPath }} />
             <h1>{brainNote.title}</h1>
             <MDXRenderer>{brainNote.childMdx.body}</MDXRenderer>
-            <h1>Linked References</h1>
-            {references}
+            {referenceBlock}
           </BrainNote>
         </BrainLayout>
     );

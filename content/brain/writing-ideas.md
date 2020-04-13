@@ -1,1 +1,13 @@
-Just read an interesting slack note about applying the [[Hero's Journey]] to [[Twitter]] to generate viral tweets. Curious about what other [[Literary Techniques]] could be used. Would it be possible, for example, to apply [[Iambic Pentameter]] to create more flowy and poetic tweets?
+- Just read an interesting slack note about applying the [[Hero's Journey]] to [[Twitter]] to generate viral tweets. Curious about what other [[Literary Techniques]] could be used. Would it be possible, for example, to apply [[Iambic Pentameter]] to create more flowy and poetic tweets?
+- [[Auditory Learning]], what is myth and what is legit?
+- [[Music Theory]] basics
+- [[Ukulele]] basics
+- Ukulele chord progressions
+- ~~[[Anki]] Tutorial~~
+- Capturing notes on podcasts
+- How to teach more effectively with audio
+- Android tutorials
+- Kotlin tutorials
+- Building a backend in Node
+- Integrating Android
+- ~~Artificial Accountability~~
