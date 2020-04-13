@@ -1,0 +1,1 @@
+Just read an interesting slack note about applying the [[Hero's Journey]] to [[Twitter]] to generate viral tweets. Curious about what other [[Literary Techniques]] could be used. Would it be possible, for example, to apply [[Iambic Pentameter]] to create more flowy and poetic tweets? #[[Writing Ideas]]

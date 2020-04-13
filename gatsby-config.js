@@ -82,6 +82,22 @@ module.exports = {
         path: "content/notes/",
         name: "notes"
       }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "content/brain/",
+        name: "brain"
+      }
+    },
+    {
+      resolve: "gatsby-transform-brain",
+      options: {
+        path: "content/brain/",
+        urlPrefix: `brain`,
+        brainTemplate: `../../src/templates/brain.js`,
+        basePage: `brain`,
+      }
     }
   ]
 };
