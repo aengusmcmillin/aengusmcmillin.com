@@ -1,6 +1,10 @@
 
 const NavItems = [
     {
+        name: "brain",
+        location: "/brain",
+    },
+    {
         name: "notes",
         location: "/notes",
     },

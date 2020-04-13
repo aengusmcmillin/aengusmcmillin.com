@@ -68,7 +68,7 @@ exports.sourceNodes = ({ actions, createNodeId, createParentChildLink, createCon
       nameToSlugMap[frontmatter.title.toLowerCase()] = slug
     }
     if (frontmatter.aliases != null) {
-      aliases.map(a => a.toLowerCase()).forEach(alias => {
+      frontmatter.aliases.map(a => a.toLowerCase()).forEach(alias => {
         nameToSlugMap[alias] = slug
       });
     }

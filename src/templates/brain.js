@@ -15,6 +15,7 @@ const BrainLayout = styled(Layout)`
 `;
 
 const BrainNote = styled.article`
+  width: 100%;
   margin-bottom: 5rem;
   align-items: center;
   display: flex;
