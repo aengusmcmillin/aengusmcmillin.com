@@ -1,11 +1,13 @@
 ---
-title: 'My Brain'
-aliases: ['mybrain']
+title: "My Brain"
+aliases: ["mybrain"]
 ---
 
 Check out the [[Books]] I am reading
 
-Or maybe my [[Writing Ideas]]
+Or maybe my [[Writing Ideas]]?
+
+I'm also using this as a knowledgebase for [[What I Know]]
 
 This is very much a work in progress. I will try and format more content for here as I get used to this system and think of things I want to share publicly.
 

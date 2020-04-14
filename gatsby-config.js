@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -6,20 +6,20 @@ module.exports = {
     author: `Aengus McMillin`,
     social: {
       email: `aengusmcmillin@gmail.com`,
-      twitter: `@aengusmcmillin`
+      twitter: `@aengusmcmillin`,
     },
     description: ``,
     titleTemplate: ``,
     image: ``,
     url: ``,
-    baseUrl: `https://aengusmcmillin.com`
+    baseUrl: `https://aengusmcmillin.com`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.ANALYTICS_TRACKING_ID
-      }
+        trackingId: process.env.ANALYTICS_TRACKING_ID,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -41,54 +41,54 @@ module.exports = {
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: path.join(__dirname, "src", "pages")
-      }
+        path: path.join(__dirname, "src", "pages"),
+      },
     },
     {
       resolve: "gatsby-plugin-mdx",
       options: {
         defaultLayouts: {
-          default: require.resolve("./src/templates/default.js")
+          default: require.resolve("./src/templates/default.js"),
         },
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 1380,
-              linkImagesToOriginal: false
-            }
+              linkImagesToOriginal: false,
+            },
           },
           {
             resolve: "gatsby-remark-embed-video",
             options: {
-              width: '560',
+              width: "560",
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
               noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
-            }
-          }
-        ]
-      }
+            },
+          },
+        ],
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         path: "content/posts/",
-        name: "posts"
-      }
+        name: "posts",
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         path: "content/notes/",
-        name: "notes"
-      }
+        name: "notes",
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         path: "content/brain/",
-        name: "brain"
-      }
+        name: "brain",
+      },
     },
     {
       resolve: "gatsby-transform-brain",
@@ -97,7 +97,7 @@ module.exports = {
         urlPrefix: `brain`,
         brainTemplate: `../../src/templates/brain.js`,
         basePage: `brain`,
-      }
-    }
-  ]
+      },
+    },
+  ],
 };
