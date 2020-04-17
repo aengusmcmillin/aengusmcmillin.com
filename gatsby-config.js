@@ -91,12 +91,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-transform-brain",
+      resolve: "@aengusm/gatsby-theme-brain",
       options: {
-        path: "content/brain/",
-        urlPrefix: `brain`,
-        brainTemplate: `../../src/templates/brain.js`,
-        basePage: `brain`,
+        mdxOtherwiseConfigured: true,
       },
     },
   ],

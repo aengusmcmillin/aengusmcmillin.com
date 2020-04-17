@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Layout from "../components/Layout";
-import { graphql } from "gatsby";
+import Layout from "../../../components/Layout";
 import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer";
-import SEO from "../components/SEO";
+import SEO from "../../../components/SEO";
 
 const BrainLayout = styled(Layout)`
   margin: 5em auto 6rem;
@@ -44,13 +43,11 @@ const BrainNote = styled.article`
   }
 `;
 
-export default function BrainTemplate({ data: { brainNote }, pageContext }) {
+export default ({ note }, pageContext) => {
   let references = [];
   let referenceBlock;
-  if (brainNote.inboundReferences != null) {
-    references = brainNote.inboundReferences.map((ref) => (
-      <a href={ref}>{ref}</a>
-    ));
+  if (note.inboundReferences != null) {
+    references = note.inboundReferences.map((ref) => <a href={ref}>{ref}</a>);
 
     if (references.length > 0) {
       referenceBlock = (
@@ -65,26 +62,11 @@ export default function BrainTemplate({ data: { brainNote }, pageContext }) {
   return (
     <BrainLayout>
       <BrainNote>
-        <SEO
-          post={{ title: `${brainNote.title}`, path: pageContext.postPath }}
-        />
-        <h1>{brainNote.title}</h1>
-        <MDXRenderer>{brainNote.childMdx.body}</MDXRenderer>
+        <SEO post={{ title: `${note.title}`, path: pageContext.postPath }} />
+        <h1>{note.title}</h1>
+        <MDXRenderer>{note.childMdx.body}</MDXRenderer>
         {referenceBlock}
       </BrainNote>
     </BrainLayout>
   );
-}
-
-export const brainQuery = graphql`
-  query BrainNoteBySlug($slug: String!) {
-    brainNote(slug: { eq: $slug }) {
-      slug
-      title
-      inboundReferences
-      childMdx {
-        body
-      }
-    }
-  }
-`;
+};
