@@ -17,6 +17,7 @@ This is all built as a [[Gatsby Theme]]. You can find the source and npm package
 
 ### Changelog
 
+- 04/18/20 Add [[Kotlin]] note with a handful of basic syntax notes
 - 04/16/20 Details about brain theme and gatsby theme development
 - 04/14/20 Page about javascript
 - 04/13/20 First version of the brain
