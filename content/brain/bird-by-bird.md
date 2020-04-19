@@ -2,8 +2,9 @@
 title: 'Bird by Bird'
 ---
 
-Tags: [[Books]] [[Read]]
-
+- Author: Anne Lamott
+- Tags: [[Books]] [[Read]]
+-
 - **Introduction**
 - Begins with a story of Anne Lamott's life. Her childhood raised by writers, and how she began writing herself
 - First big story to tell came from her father getting brain cancer.

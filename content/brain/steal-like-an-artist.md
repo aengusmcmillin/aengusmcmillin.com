@@ -1,0 +1,92 @@
+---
+title: "Steal Like An Artist"
+---
+
+- Author: Austin Kleon
+- Tags: [[Books]]
+- 
+- **Steal Like An Artist**
+    - All the best artists find the ideas worth stealing. 
+    - No ideas are fully unique, everything is built on what comes before
+    - Combining ideas creates more than the sum of its parts
+    - Look for good quality inputs into your life. Don't let garbage in.
+    - Don't just look at your favorite people, also look at their favorite people
+    - Keep educating yourself, be curious about the world and draw from it
+    - Keep a swipe file to store the best ideas you find. Capture quotes, designs, colors, and anything else worth stealing. 
+- **Don't Wait Until You Know Who You Are To Get Started**
+    - You have to just start and find yourself as you go
+    - Copy people you respect, try to emulate their work
+    - Don't copy from a single individual, copy from many. This amalgamation of ideas will turn into your own unique voice.
+- **Write The Book You Want To Read**
+    - Don't just write about what you know, write about what you like
+    - Try to write a sequel to all your favorites combined into one
+    - Think about what your favorite people might have created if they worked together, and try to make that thing
+- **Use Your Hands**
+    - It is hard to unlock creative ideas solely in front of the computer
+    - Setup a physical workstation for yourself. Use paper and scissors and tape and put the ideas together in visual ways.
+    - Once the idea is set, move back to the computer to bring it to life
+    - (How could I do this with programming? Maybe more paper prototyping? Designing system architectures and schemas on paper first?)
+- **Side Projects And Hobbies Are Important**
+    - Side projects allow for productive procrastination. Have projects you can switch between so that when you get bored of one you have a productive way to spent your time anyway
+    - Take time to be bored, mess around, wander. It will lead to great insights.
+    - Don't throw away interests. Pursue a variety of different things as hobbies or more. You won't know how it all connected together until you look back.
+- **The Secret: Do Good Work And Share It With People**
+    - College makes us feel like people care what we think, and that illusion is shattered the moment we enter the real world
+    - "Enjoy your obscurity while it lasts. Use it"
+    - Not-so-secret formula to being known: Do good work and share it with people
+    - Practice and keeping working until you can do good work
+    - Put things on the internet to share it
+    - Get interested in things and share those interests, don't worry about keeping secrets, just share
+    - Use the internet to develop ideas and evolve your process, keep publishing and improving, and allow your audience to hold you accountable
+- **Geography Is No Longer Our Master**
+    - We can find mentors anywhere in the world now
+    - Build a community online, you aren't constrained to your location
+    - Build a world around you that you enjoy
+    - Find solitude for yourself. Bring a book, a notebook, and pen, and find a place to sit, think, and give yourself a bit of space and a bit of time
+    - Sometimes you do need to leave home. You need to feel uncomfortable and train yourself to see the world differently.
+    - Find a place with bad weather. It will force you to stay inside and work.
+    - "You have to find a place that feeds you--creatively, socially, spiritually, and literally."
+- **Be Nice. (The World Is A Small Town)**
+    - Make friends on the internet, don't be mean, be nice instead
+    - Spend time around people smarter than you. The people you follow should inspire you to be better.
+    - "If you ever find that you're the most talented person in the room, find a new room"
+    - Get angry as inspiration, but don't get in fights, instead channel that anger into getting shit done
+    - "Complain about the way other people make software by making software" - Andre Torrez
+    - Write public fan letters. Show appreciation for someone's work without doing it in a way that requires them to respond. 
+    - Don't look for external validation, it probably won't come, just keep busy doing work you want to do
+    - Keep a praise file. Don't overuse it, but take advantage of when your work is noticed and people appreciate you, keep those things as a reminder for when times are tough
+- **Be Boring. (It's The Only Way To Get Work Done)**
+    - Take care of yourself. You need energy to be creative, so keep yourself healthy enough to have energy, and don't waste it being stupid.
+    - Try to be good with money. Learn about it, set a budget, avoid debt.
+    - Keep the day job. It will give you a routine, financial stability, and people around you to learn from.
+    - A job takes away your time, but giving you a routine is really valuable. Take advantage of that, and use that routine to keep doing your work every single day.
+    - Get a calendar and use it to stay on track. [[Don't Break The Chain]]
+    - Keep a logbook of what you do every day. Don't worry about making it a journal of thoughts and feelings, just record where you go to lunch, the things you work on, and who you may have met up with.
+    - Find the right person to marry. Find someone to keep you grounded and that improves and appreciates your life as a chaotic creative.
+- **Creativity Is Subtraction**
+    - Place constraints on yourself to get past paralysis of choice. 
+    - For creative work, limitations = freedom
+    - The things left out of a piece of work can be what gives it character. 
+    - "In the end, creativity isn't just the things we put in, it's the things we choose to leave out"
+- **Next Steps**
+    - Take a walk
+    - Start your swipe file
+    - Go to the library
+    - Buy a notebook and use it
+    - Get a calendar
+    - Start a logbook
+    - Give a copy of the book away
+    - Start a blog
+    - Take a nap
+- **Book Recommendations**
+    - What It Is - Lynda Barry
+    - Ignore Everything - Hugh Macleod
+    - Rework - Jason Fried, DHH
+    - The Gift - Lewis Hyde
+    - The Ecstasy of Influence - Jonathan Lethem
+    - Reality Hunger - David Shields
+    - Understanding Comics - Scott McCloud
+    - [[Bird by Bird]] - Anne Lamott
+    - Flow - Mihaly Csikszentmihalyi
+    - Make a World - Ed Emberly
+
