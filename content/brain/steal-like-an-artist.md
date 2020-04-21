@@ -4,6 +4,7 @@ title: "Steal Like An Artist"
 
 - Author: Austin Kleon
 - Tags: [[Books]]
+- Summary: https://aengusmcmillin.com/steal-like-an-artist
 - 
 - **Steal Like An Artist**
     - All the best artists find the ideas worth stealing. 
