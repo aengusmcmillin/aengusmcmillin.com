@@ -17,6 +17,7 @@ This is all built as a [[Gatsby Theme]]. You can find the source and npm package
 
 ### Changelog
 
+- 04/21/20 Add my [[WIP]] [[Building a Second Brain Cohort 10]] notes
 - 04/19/20 Add [[Steal Like An Artist]] book notes
 - 04/18/20 Add [[Kotlin]] note with a handful of basic syntax notes
 - 04/16/20 Details about brain theme and gatsby theme development
