@@ -13,6 +13,7 @@ module.exports = {
     image: ``,
     url: ``,
     baseUrl: `https://aengusmcmillin.com`,
+    siteUrl: `https://aengusmcmillin.com`,
   },
   plugins: [
     {
@@ -31,6 +32,65 @@ module.exports = {
         theme_color: `#c95900`,
         icon: `static/icon.png`,
         display: `standalone`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, notes } }) => {
+              return notes.nodes.map((note) => {
+                return Object.assign({}, note.childMdx.frontmatter, {
+                  description: note.childMdx.excerpt,
+                  date: note.childMdx.frontmatter.date,
+                  url:
+                    site.siteMetadata.siteUrl + note.childMdx.frontmatter.slug,
+                  guid:
+                    site.siteMetadata.siteUrl + note.childMdx.frontmatter.slug,
+                  custom_elements: [{ "content:encoded": note.childMdx.html }],
+                });
+              });
+            },
+            query: `
+             {
+              notes: allFile(
+                filter: {
+                  sourceInstanceName:{ in: ["notes","posts"] }
+                  relativePath: { glob: "**/*.{md,mdx}" }
+                }
+                sort: { fields: childMdx___frontmatter___date, order: DESC }
+              ) {
+                nodes {
+                  childMdx {
+                    frontmatter {
+                      title
+                      slug
+                      date
+                    }
+                    html
+                    excerpt
+                  }
+                }
+              }
+            }
+            `,
+            output: "/rss.xml",
+            title: "Your Site's RSS Feed",
+          },
+        ],
       },
     },
     "gatsby-plugin-react-helmet",
