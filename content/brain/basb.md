@@ -5,6 +5,40 @@ aliases: ["basb", "building a second brain"]
 
 Tags: [[Courses]] [[WIP]]
 
+### Unit 3: Note Taking for Creativity
+
+- Goal is to understand how note taking can enhance and support your creative output
+- Understand how digital note taking should be the core of a PKM system
+- Four Main Functions for Digital Note Taking
+  - Promote unusual associations between pieces of information
+    - Creativity is connecting things. Creatives are better at connecting things, and note taking can cultivate that skill
+  - Create visual artifacts
+    - It is easier for us to interact with physical and visual ideas, so it is important that the notes turn into something more concrete than ideas in the brain
+    - This allows spatial reasoning and pattern matching to operate against our ideas
+  - Incubate ideas over longer periods of time
+    - Rather than trying to finish a thought process all at once, it is better to have a slow burn. Let the ideas simmer and develop.
+    - Generate the equivalent of passive income for ideas. Build up a set of reusable notes that can be evolved and reapplied over time
+  - Provide the raw material for unique interpretations and perspectives
+    - Interpreting things and having a point of view is one of the most important skills. You need to have a strong, well developed perspective.
+    - Use your notes as raw material to build out your perspective.
+    - Generating this material can be time consuming, so it makes sense to build it up over time
+- Personal Knowledge Base
+  - Durable. It should be reliable and not have a single point of failure.
+  - Universal. It should be accessible anywhere.
+  - Visual. It should represent your ideas in a way that can be visualized. 
+  - Centralized. It should contain all types of files.
+- Notes
+  - Personal, informal, quick and dirty
+  - Open-ended and never finished
+  - Low expectations for quality/finish
+  - Mix of diverse types of media
+  - Notes are not optimized for the consumption of others, purely optimized for you
+- Why is it worth it?
+  - There is a set of knowledge unique to you
+  - It is good to treat information gained as an investment rather a fleeting thing
+  - There is value in having your own personal library
+
+
 ### Live Session 1
 
 - Goals of the first lesson: Understand the objectives of the course, how it will be conducted, communication channels, and how to succeed
@@ -220,6 +254,78 @@ Tags: [[Courses]] [[WIP]]
   - Q: How do you keep maintaining your Second Brain?
   - A: The system will get infected at times and need to steadily evolve to keep up with your needs and get past the issues that develop
   - ... (incomplete notes, need to watch the Q&A again, didn't stay for the whole thing)
+
+### Live Session 6
+
+- Start with a poll asking people how on track they are. Roughly 50/50 split between on track and behind, very few ahead or way behind
+- There is no real way to fall behind. We will be going make and forth between concepts, spend more time on others, and skip for the time being
+- Switching up the schedule. Going to be doing different stuff on Friday instead of office hours.
+- Last time covered 12 favorite problems and top 5 sources
+- Focus on capturing from those top 5 sources, we need to master capture from those to use as a platform for more advanced/difficult ways of capture. 
+- Get exposure to the diversity of different capture methods. There may be things we haven't even considered that could actually be really valuable.
+- Breakout group to talk about 12 favorite problems and capture sources
+  - Favorite problems can scale up and scale down as needed
+  - It's good to have a high level view, and the 12 problems is how you can get that
+  - Consider having a runway of questions at different levels, from low to high
+  - Victor Ramirez has a good handle on podcast capture, may want to reach out to him
+  - Podcast capture is an issue for lots of people
+  - Photos came up as a problem. How to incorporate a large number of photos into a BASB system? My thought is to create Capture One sessions for a project, and pull things into there. I could also create catalogs for an area maybe?
+  - How do we capture thoughts that we want to hold on to?
+  - Inboxes are incredibly important, need to set those up and give ourselves time to process them. 
+  - Huge range of approaches, including people working in analog
+  - How to handle work vs personal? Doesn't really have a good solution. Although if work supports Notion that may be a good approach.
+- Unofficial action step: Iron out issues capturing from the top 5 sources.
+- Use the media library to look through approaches for different types of capture
+- Action Steps for Monday:
+  - Watch Unit 5 & Unit 6 lectures
+  - Watch Case Study on Starting a Podcast
+  - Capture Challenge. Save 15 notes by Monday. Need to save ~3 notes per day in this time.  Capturing just 3 notes per day means >1000 posts per year. Try to take these in things related to the capstone project.
+- Whatever way we are approaching the capstone project, was there something familiar with the way we approached it?
+- This BASB system may be able to change the way we approach these problems. Expand the kind of person you can be in a given situation.
+- "What would it look like to run this project in a different way than you ever have?"
+- **Q&A**
+
+### Live Session 6.5
+
+- Today talking about progressive summarization
+- The goal of Unit 4
+- Benefits of Progressive Summarization:
+  - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2Fs5d3L0fb4J?alt=media&token=bf894006-954b-42af-babe-f056a7419eb4)
+  - Stay in the flow of reading, saving seamlessly to avoid disruption and making it incredibly easy
+  - Make intuitive decisions about where to focus your attention. You don't need to give all of the content equal focus, even in fiction this won't be the case
+  - Send packets of knowledge to your future self. These can be used for all sort of useful purposes
+  - Distill key points anywhere.
+  - Minimize time spent summarizing until usefulness is understood.
+  - Easily decide if a note is worth reading in full
+  - Get up to speed on a note within seconds
+- You need to find the key points in a paragraph. Don't highlight everything, try to identify the punchline of what you read. 
+  - Example from Work Clean
+  - Can highlight full paragraphs for context in some cases
+- A good example of progressive summarization should include:
+  - A very brief summary of the core ideas at the too
+  - Key words, sentences, and maybe paragraphs. Ratio should be roughly 30% bolded
+  - Best of that content highlighted, roughly 10 to 1 bold to highlight
+  - Consider bolding headings, list titles, and points that will indicate if the surrounding material is worth reading
+  - Capture further reading materials
+- Keep your notes glanceable. You should be able to get the best value out of it at a glance.
+- Don't pull the whole article into your second brain, do the initial pass of capture elsewhere (e.g. in liner, instapaper, kindle highlighting), and then do the summarizing within your brain based on what you captured
+- Instapaper and Readwise automatically export to evernote. With Liner you need to open the dashboard and then export to evernote. 
+- Most people recommend using Instapaper almost exclusively, but if you regularly want to read as you go instead of sending things to Instapaper it can  be beneficial to use Liner
+- https://fortelabs.co/blog/the-secret-power-of-read-it-later-apps/
+- Exercise: Save the best excerpts from https://divinations.substack.com/p/bundle-magic 
+- Exercise 2: Take Tiago's note and summarize across each of the layers
+  - In My Words: Bundle goods that are free to deliver and provide a clear set of value
+  - ---
+  - This is a common misconception of why niche products often charge more. <mark>It’s not necessarily that their users are willing to pay more, it’s that they have **less to lose by charging a higher price**</mark>.)
+  - See the right side of the graph, where the line dips into negative territory? That means you would have made more money had you offered each newsletter individually. The relationship here is very clear: <mark>if people have zero demand for most things in your bundle, it’s a bad idea to try and force a bundle on them</mark>. But <mark>if people have a little demand for everything, and a lot of demand for some things, then a bundle is a great idea</mark>.
+  - That’s <mark>one reason **you don’t often see bundles with lots of disparate goods** — it would take too much work to explain what’s in there</mark>! It makes a lot more sense when everything fits a certain intuitive pattern, like songs (Spotify), movies (Netflix), and sports news (The Athletic). That way <mark>customers just “get it” and can make a **judgment call on how much it’s worth to them** without spending a lot of time researching what’s included</mark>.
+  - Lastly, <mark>none of the analysis above works for physical products, or consulting services. I**t only makes sense to give people things they don’t fully want if it costs you nothing to give it to them**</mark>. So it works for software and digital media, but not much else. This is why music and movies weren’t previously offered as a bundle when they had to be printed on discs and shipped, but now that they’re delivered for essentially free over the internet, they’re bundled.
+- Mine are surprisingly similar to Tiago's results from the same exercise
+- 
+- "Writer's block just means I don't have the ammo" - Sebastian Junger
+- These notes should be well packaged, with a label on top so you know when to use it
+- When you start a project you should have what you need right away to get momentum
+
 
 ### Office Hours 1
 

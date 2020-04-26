@@ -2,6 +2,8 @@
 title: "Kotlin"
 ---
 
+Tags: [[What I Know]] [[Languages]] [[Mobile Development]] [[Android]]
+
 - **Syntax**
     - No semicolons
     - defining package: `package com.aengusmcmillin.test`
@@ -18,5 +20,6 @@ title: "Kotlin"
     abstract fun overridable() {}
 }`
     - null chaining: `nullableObject?.foo()`
+    - Bitwise or: `val combinedFlags = flag1 or flag2`
     - 
 
