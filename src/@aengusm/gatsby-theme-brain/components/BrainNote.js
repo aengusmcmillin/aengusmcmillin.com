@@ -46,8 +46,14 @@ const BrainNote = styled.article`
 export default ({ note }, pageContext) => {
   let references = [];
   let referenceBlock;
-  if (note.inboundReferences != null) {
-    references = note.inboundReferences.map((ref) => <a href={ref}>{ref}</a>);
+  if (note.inboundReferencePreviews != null) {
+    references = note.inboundReferencePreviews.map((ref) => (
+      <li>
+        <a href={ref.source}>{ref.source}</a>
+        <br />
+        <div dangerouslySetInnerHTML={{ __html: ref.previewHtml }} />
+      </li>
+    ));
 
     if (references.length > 0) {
       referenceBlock = (
