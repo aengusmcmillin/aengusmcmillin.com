@@ -59,7 +59,9 @@ export default ({ note }, pageContext) => {
       referenceBlock = (
         <>
           <h1>Linked References</h1>
-          {references}
+          <ul>
+            {references}
+          </ul>
         </>
       );
     }
