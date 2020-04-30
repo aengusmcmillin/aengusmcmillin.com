@@ -25,7 +25,7 @@ Tags: [[Courses]] [[WIP]]
 - Personal Knowledge Base
   - Durable. It should be reliable and not have a single point of failure.
   - Universal. It should be accessible anywhere.
-  - Visual. It should represent your ideas in a way that can be visualized. 
+  - Visual. It should represent your ideas in a way that can be visualized.
   - Centralized. It should contain all types of files.
 - Notes
   - Personal, informal, quick and dirty
@@ -37,7 +37,6 @@ Tags: [[Courses]] [[WIP]]
   - There is a set of knowledge unique to you
   - It is good to treat information gained as an investment rather a fleeting thing
   - There is value in having your own personal library
-
 
 ### Live Session 1
 
@@ -261,7 +260,7 @@ Tags: [[Courses]] [[WIP]]
 - There is no real way to fall behind. We will be going make and forth between concepts, spend more time on others, and skip for the time being
 - Switching up the schedule. Going to be doing different stuff on Friday instead of office hours.
 - Last time covered 12 favorite problems and top 5 sources
-- Focus on capturing from those top 5 sources, we need to master capture from those to use as a platform for more advanced/difficult ways of capture. 
+- Focus on capturing from those top 5 sources, we need to master capture from those to use as a platform for more advanced/difficult ways of capture.
 - Get exposure to the diversity of different capture methods. There may be things we haven't even considered that could actually be really valuable.
 - Breakout group to talk about 12 favorite problems and capture sources
   - Favorite problems can scale up and scale down as needed
@@ -271,7 +270,7 @@ Tags: [[Courses]] [[WIP]]
   - Podcast capture is an issue for lots of people
   - Photos came up as a problem. How to incorporate a large number of photos into a BASB system? My thought is to create Capture One sessions for a project, and pull things into there. I could also create catalogs for an area maybe?
   - How do we capture thoughts that we want to hold on to?
-  - Inboxes are incredibly important, need to set those up and give ourselves time to process them. 
+  - Inboxes are incredibly important, need to set those up and give ourselves time to process them.
   - Huge range of approaches, including people working in analog
   - How to handle work vs personal? Doesn't really have a good solution. Although if work supports Notion that may be a good approach.
 - Unofficial action step: Iron out issues capturing from the top 5 sources.
@@ -279,7 +278,7 @@ Tags: [[Courses]] [[WIP]]
 - Action Steps for Monday:
   - Watch Unit 5 & Unit 6 lectures
   - Watch Case Study on Starting a Podcast
-  - Capture Challenge. Save 15 notes by Monday. Need to save ~3 notes per day in this time.  Capturing just 3 notes per day means >1000 posts per year. Try to take these in things related to the capstone project.
+  - Capture Challenge. Save 15 notes by Monday. Need to save ~3 notes per day in this time. Capturing just 3 notes per day means >1000 posts per year. Try to take these in things related to the capstone project.
 - Whatever way we are approaching the capstone project, was there something familiar with the way we approached it?
 - This BASB system may be able to change the way we approach these problems. Expand the kind of person you can be in a given situation.
 - "What would it look like to run this project in a different way than you ever have?"
@@ -298,7 +297,7 @@ Tags: [[Courses]] [[WIP]]
   - Minimize time spent summarizing until usefulness is understood.
   - Easily decide if a note is worth reading in full
   - Get up to speed on a note within seconds
-- You need to find the key points in a paragraph. Don't highlight everything, try to identify the punchline of what you read. 
+- You need to find the key points in a paragraph. Don't highlight everything, try to identify the punchline of what you read.
   - Example from Work Clean
   - Can highlight full paragraphs for context in some cases
 - A good example of progressive summarization should include:
@@ -309,23 +308,96 @@ Tags: [[Courses]] [[WIP]]
   - Capture further reading materials
 - Keep your notes glanceable. You should be able to get the best value out of it at a glance.
 - Don't pull the whole article into your second brain, do the initial pass of capture elsewhere (e.g. in liner, instapaper, kindle highlighting), and then do the summarizing within your brain based on what you captured
-- Instapaper and Readwise automatically export to evernote. With Liner you need to open the dashboard and then export to evernote. 
-- Most people recommend using Instapaper almost exclusively, but if you regularly want to read as you go instead of sending things to Instapaper it can  be beneficial to use Liner
+- Instapaper and Readwise automatically export to evernote. With Liner you need to open the dashboard and then export to evernote.
+- Most people recommend using Instapaper almost exclusively, but if you regularly want to read as you go instead of sending things to Instapaper it can be beneficial to use Liner
 - https://fortelabs.co/blog/the-secret-power-of-read-it-later-apps/
-- Exercise: Save the best excerpts from https://divinations.substack.com/p/bundle-magic 
+- Exercise: Save the best excerpts from https://divinations.substack.com/p/bundle-magic
 - Exercise 2: Take Tiago's note and summarize across each of the layers
   - In My Words: Bundle goods that are free to deliver and provide a clear set of value
-  - ---
+  ***
   - This is a common misconception of why niche products often charge more. <mark>It’s not necessarily that their users are willing to pay more, it’s that they have **less to lose by charging a higher price**</mark>.)
   - See the right side of the graph, where the line dips into negative territory? That means you would have made more money had you offered each newsletter individually. The relationship here is very clear: <mark>if people have zero demand for most things in your bundle, it’s a bad idea to try and force a bundle on them</mark>. But <mark>if people have a little demand for everything, and a lot of demand for some things, then a bundle is a great idea</mark>.
   - That’s <mark>one reason **you don’t often see bundles with lots of disparate goods** — it would take too much work to explain what’s in there</mark>! It makes a lot more sense when everything fits a certain intuitive pattern, like songs (Spotify), movies (Netflix), and sports news (The Athletic). That way <mark>customers just “get it” and can make a **judgment call on how much it’s worth to them** without spending a lot of time researching what’s included</mark>.
   - Lastly, <mark>none of the analysis above works for physical products, or consulting services. I**t only makes sense to give people things they don’t fully want if it costs you nothing to give it to them**</mark>. So it works for software and digital media, but not much else. This is why music and movies weren’t previously offered as a bundle when they had to be printed on discs and shipped, but now that they’re delivered for essentially free over the internet, they’re bundled.
 - Mine are surprisingly similar to Tiago's results from the same exercise
-- 
+-
 - "Writer's block just means I don't have the ammo" - Sebastian Junger
 - These notes should be well packaged, with a label on top so you know when to use it
 - When you start a project you should have what you need right away to get momentum
 
+### Live Session 7
+
+- Today finishing up with capture
+- Over the next week and a half we will be covering what it looks like to share and create based on our notes
+- Benefits of Intermediate Packets:
+  - Instead of creating a big chunk of stuff for a single project, you can create smaller packets of reusable content
+  - You build up a library of useful information over time, which allows for incredibly easy creation of new things
+  - It makes you distraction resistant. If you are making lots of little things, it matters less if you get distracted in the middle because you aren't losing track of large scope
+  - It allows you to focus on different things based on different energy levels. If you are focused you can work on the more difficult packets, otherwise the easier ones.
+  - We need to cultivate more than just deep work, but the ability to adapt and roll with the punches
+  - An intermediate packet is just a note.
+- Poll asking people how many packets they saved. Split between folks that did <15 and >15
+- Benefit of focusing on the capstone project is that we have a more clear filter of what deserves to be captured
+- Also a benefit of the 12 favorite problems. It can also help drive note taking.
+- Don't treat the entire BASB course as a project. Instead try and figure out what is really necessary for the work you do and focus on those elements.
+- Now talking about the inbox
+  - Ideally your inbox should be full of a large number of diverse things.
+  - Triage requires taking a ton of different inputs and problems through a single entry point, and sending it all to the right place
+  - Go from oldest to newest, never skip an item, don't leave anything in the inbox
+  - Gave a demo of how he processes his inbox, good to see the process
+  - Exercise to do the same ourselves. This is where it feels way more valuable to use Evernote than Roam or Notion, but maybe that just means the same workflow doesn't make sense in those
+  - Can actually help to have a full inbox. Makes it easier to get into flow.
+  - Consider not even titling the notes from the inbox. Untitled should be a common note.
+- Should be splitting notebooks, merging them, and otherwise treating them as a living categorization.
+- Focus on doing the same things the same way every time. You can move past most restrictions in tools by having a process.
+- Focusing on the top 5 sources.
+- Exercise: choose a single method for one of those sources.
+  - eBooks: Kindle Highlights -> Readwise -> Evernote -> Import to Notion
+- Workshops coming up:
+  - Readwise team
+  - How to work effectively with a personal assistant
+- Action Steps:
+  - Finish triaging the notes in your inbox
+  - Progressively summarize notes related to your Capstone Project
+
+### Live Session 8
+
+- Reviewing the emotional journey from session 5, also doing a proper poll this time to evaluate
+- We should all consider that, by definition, we have done our best with the resources we have and the situation we are in
+- Talking about the maintenance required for this system:
+  - Not much maintenance
+  - No need to capture every idea, or even most of them. We just need to focus on a certain set of inputs and types of important ideas
+  - No need to clear the inbox regularly. Just need to go through every week or every couple of weeks. Can just put the reference system on pause, only really need to pay attention to the task manager day to day.
+  - Clear the inbox when you find yourself taking more time to look for things in the inbox than it would to clear it.
+  - No need to summarize all the time. Wait until there is a real need for those notes before you summarize them.
+  - No need to triage correctly. There is no single proper place for a note, it can live anywhere. Just use lightweight heuristics to quickly triage.
+  - The one thing that really needs to be done well is project completion.
+  - Everyone has projects, not everyone properly handles knowledge.
+  - We need to be able to reuse our knowledge, recycle it, and properly apply it in more effective ways
+- 30 Minutes to develop a project completion checklist
+  - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2FdVd_Ev6c33?alt=media&token=1bf89e99-8933-446d-9ea7-a68b2113c75c)
+  - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2FF6z_x0i36o?alt=media&token=a1631e00-9849-4359-8589-3ce53bc2bdc4)
+  -
+- Breakout room to discuss our checklist and capture. Lead by Pandith
+  - Common difficulty is dealing with the number of different tools, and how best to use each one for what.
+  - My own difficulties come from differences in the way that Roam works vs other things
+  - Problems with capturing too much, and deciding what to cut and what to save. This will get better as you work through more projects and get a better intuition about what the key points are for a given thing.
+  - Helps to use a buffer before your inbox to give space to evaluate a source before deciding to capture it. Instapaper is an example of a buffer.
+  - Helps to focus on capturing just the coolest parts of different articles
+  - When breaking down projects into subprojects, recognize that you won't be working on all of them at the same time. So you should only be keeping the active parts in your project list.
+  - Discussion in chat about Notion APIs
+    - https://pypi.org/project/notion/
+    - https://github.com/kjk/notionapi
+  - Bit of discussion about capture into Notion. Main idea that came up was using Evernote as an inbox, and either copy/pasting or importing into Notion
+- We should be able to summarize what we have learned into a single page at the end of all this
+- Make it fun! Make it enjoyable to complete projects. One idea: Reward of dark chocolate
+- Consider having a success criteria: Did I change my mode of operation after completing the project
+- Add a gratitude list for the projects. What am I grateful for having finished a project?
+- Just try to be a few percent better every time
+- Action Steps:
+  - Add default capture steps to top 5 sources
+  - Watch unit 6 lecture video on JIT project management
+  - Watch case study 5 on Long Form Writing
 
 ### Office Hours 1
 
@@ -353,3 +425,56 @@ Tags: [[Courses]] [[WIP]]
 - Watching Tiago go through this was amazing. I need to go back through and watch it again slower speed and incorporate all the steps for myself.
 - Can add reference materials to Resources and then have a Table of Contents in the prjoect
 - "My key takeaways today is "grow organically" / "let it flow" / "touch lightly" / "moving more, organize less"" from chat
+
+### Readwise Workshop
+
+- Founders: Daniel Doyon and Tristan Homsi
+- Readwise creates a single space for integrating a wide variety of different sources and platforms into your note
+- Bell curve of familiarity with Readwise
+- Starting with a high level overview, then get into the story of Readwise, and afterwards walk through a few workflows
+- High level overview:
+  - Readwise is "software that helps you remember more of what you read"
+  - Add a variety of different import services, and have all of the highlights sync in once per day from Kindle, Instapaper, Twitter, Pocket, etc...
+  - It began with Kindle
+  - Early on began sending the random 5 notes in an email, and folks really liked this feature, and they expanded on this with the daily review web app
+  - Over time added many different integrations
+- Story of Daniel
+  - Quit his job and traveled, ended up doing more and more reading, and had trouble remembering everything
+  - Used Anki, and eventually built a Cloze based system on top of it to reinforce what he had been reading with SRS. SuperReading was his system developed before Readwise.
+  - Second order benefit of SuperReading: he was able to remember details about survival skills from a book he read after getting lost on a hike in Costa Rica. His brain began pelting him with reminders and warnings about the situation that he was in when he needed it. Some level of learned "Wisdom"
+  - Really dove deep into SuperReading, met Tristan working on similar things, and they have been working on it since
+- Story of Tristan
+  - Whole life a technologist with a focus on reading
+  - His focus was on the input into your reading list. How to maintain it, pick from it, and add to it.
+  - Built a web app to help people prioritize books to read. He was at the beta stage when he met Daniel and switched to working more on Readwise
+  - Focus on efficiency and speed vs Daniel's focus on long term retention and deeper thinking
+  - Three ways to improve reading
+    - Choosing better things to read
+    - Reading more efficiently
+    - Retaining what you read
+  - Readwise focuses on the last aspect because it helps improve the leverage for the first two. Doesn't matter how much good stuff you read if you don't retain any of it
+  - "Don't pour water in a leaky bucket"
+- Think of software as having a low bar and a high ceiling. Allow people to get started with a daily email, and go all the way up to detailed management of highlights.
+- Able to adjust the number of highlights to review, prioritize newer vs older, and even adjust for individual books
+- Daily Review:
+  - Blue dot shows details about the highlight and review history
+  - Inline tagging with Kindle notes. `.probability` would add the probability tag to a highlight
+  - Quickly add tags using the 'T' key
+  - Edit highlights to add context or fix issues with glitches or artifacts. This was just added.
+  - Also recently added added markdown export.
+- Content consumption has become unbundled. Readwise helps bundle it again.
+- Moving backwards in the pipeline rather than forward. They want to leave the note taking and writing to the Evernote and Notion tools, and focus instead on moving up to capture sources and finding good sources
+- Notion support coming, same with an Android app
+- The iOS (and eventually Android) apps have OCR for capture of physical books
+- More advanced versions of tagging
+  - Add Chapters to highlights using heading tags
+  - Highlight the chapters and sections of the book and tag them with `.h1`, `.h2`, and `.h3` to generate headings
+  - `.c1`, `.c2`, etc... can be used to concatenate sections
+- Add Supplemental Books in the Add Highlights section to get an initial set of good notes from books you have read but didn't highlight
+- From the daily review you can add tags, highlight the highlights, favorite things, share to social media, and apply active recall methods.
+- There is a mastery system that happens during daily review, and cards can be converted to cloze deletion or questions and answers.
+- Review streaks can help keep you on top of your reviews
+- Links from chat
+  - https://ryanholiday.net/this-is-what-you-should-read-every-day/
+  - https://blog.readwise.io/tag-your-highlights-while-you-read/
+  - https://listed.to/@roxine/14051/how-to-use-readwise-to-get-notes-and-highlights-into-evernote
