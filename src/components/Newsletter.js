@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+const Newsletter = () => {
   return (
     <form>
       <label for="email">
@@ -9,3 +9,5 @@ export default () => {
     </form>
   );
 };
+
+export default Newsletter;
