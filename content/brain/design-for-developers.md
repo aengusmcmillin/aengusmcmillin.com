@@ -1,0 +1,85 @@
+- **Metadata**
+
+  - Instructor:: [[Sarah Drasner]]
+  - Source:: https://frontendmasters.com/courses/design-for-developers
+  - Tags:: #Course #Design #Visuals #WIP #[[Web Development]] #Flexbox
+
+- ## Notes
+  - **Introduction**
+  - Exercising both the left and the right brain strengthens the brain as a whole, it's good to work outside our normal discipline
+  - "There is no direct scientific evidence that supports an analytical, logical thinking style for the left hemisphere, which predetermines the left hemisphere for mathematical tasks, or reading and writing. In contrast, Stanislas Daheane found that both the right and left hemisphere are active in the identification of Arabic numerals (e.g. “1”,”2”). Similarly, other data showed that subsystems in both hemispheres are activated for parts of the reading process"
+  - Left vs right brain is a myth, any of us can be good at this
+  - This course is not a replacement for design school or many years in the field.
+  - Recommends a folder structure with dev, insp, and src folders
+  - This course should be used to improve side project. With this sort of material it is possible to do a whole project from start to finish without needing to find collaborators
+  - This course is a place to understand base concepts and to get resources on where to start
+  - It takes bad designs first before we can make good designs
+  - Don't stress about lack of perfection in the beginning
+  - [[Focus on quantity]] I need to make a page for this because I have heard it mentioned in literally every creativity course I have taken, it's insane
+  - Sarah doesn't consider herself a designer. She is a developer who does design to make her projects more compelling. She was an art professor with a masters in art in the past though, so...
+  - **Layout**
+  - Layout and grid systems aren't new, they have been used for a long time to provide order to the chaos. Grids have been used as far back as ancient city planning.
+  - Grids also allow for playing around with the basic format without needing more than basic blocks before thinking about all the other things like color and fonts
+  - Balance and symmetry is of course a really big deal, used for art, architecture, and more throughout all of history
+  - Possible to break symmetry to draw the eye to certain elements
+  - Websites regularly use symmetry, and then break it to draw the eye to a call to action
+  - The problem with symmetry is that it can start to fall flat and feel a little boring, makes them look very similar to other sites
+  - Asymmetry can make sites more interesting, but finding the balance is more difficult, and requires a lot more thought to get right
+  - Starry Night is one of people's favorite pieces of art, and it is asymmetrical
+  - The world isn't perfectly symmetrical, so asymmetry can pull in more of an idea of natural beauty
+  - Other examples include edo style art, architecture like the Sydney Opera House, and [[Wabi Sabi]] (a pot that has been cracked and the cracks filled with gold)
+  - https://dribbble.com/Orizon examples of design with asymmetry and even breaking out of the grid
+  - Rule of thirds in photography, and Triad Composition in painting are examples of ways to balance asymmetry
+  - Swiss design famous for using large, flat, geometric shapes. Very definitively uses, makes, and breaks grids in a clean, obvious way that works well.
+  - Shape is really important, not just the triangles already covered
+  - Circles draw the eye
+  - Saccade: Even when looking at one image, your eye is always scanning around
+  - Certain things are more important to saccade: movement, bright colors, and faces/eyes (both circles, hence drawing the eye)
+  - Circles live outside of lines. If you perfectly line things up, a circle will look like it is misaligned, so negative margins may be necessary
+  - Diagonals are dynamic, they are incredibly effective and almost always present in "The Greatest X of All Time" things, but very rarely used in web. Swiss design uses diagonals a lot.
+  - Scale and cropping are incredibly useful. If you take an otherwise boring image, but scale it up, crop it in interesting ways, and otherwise adjust those two parameters it can make a beautiful composition
+  - Example of using a large image, scaling it, rotating it, and showing just a small portion of it to give the general idea
+  - Book Recommendation: [[Making and Breaking the Grid]]
+  - That book is essentially best practices and rules for how to effectively use grids
+  - The core reason to use a grid is that it anchors different elements. Anchoring elements to each other is a good thing, and without that designs will feel disorganized and chaotic
+  - Anchoring shows up everywhere. Just about any good design can have lines drawn across it to show very clear anchoring
+  - Asking for even minor adjustments can completely break down the design
+  - "The architecture of space" - Timothy Samara
+  - The layout needs to have proper architecture to make it easy to navigate, not feel lost, and to feel properly open as desired
+  - Next was an overview of some tools (sketch, photoshop, illustrator) and some photoshop tips and tricks
+  - Then there were a few examples of composing layouts in photoshop by showing the grid and placing dark rectangles and circles on a white background, snapping to the grid
+  - Can also use polygonal marquee to clip off corners or add details to the background (or any number of uses) to introduce diagonals into the design
+  - Can put different compositions in their own groups to make it easy to switch between different ideas to compare and discuss
+  - Then there is an assignment: Design 3 layouts using a grid. This was supposed to be on paper, but I don't have the same grid paper so I did it in Sketch
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2FYlZgGw0xEW?alt=media&token=511b05a6-1705-487e-bed3-5ff16edc6cc5)
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2F9-id4UOwmo?alt=media&token=a4c58583-0581-4822-bfbd-ce812953d117)
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2FulUbEcjsgH?alt=media&token=7c7dbdd7-3e75-4281-9083-973a52e79023)
+  - **CSS Layout**
+  - Resources:
+    - https://gridbyexample.com/
+      - Shows a variety of examples, and even demonstrates fallbacks for older browsers.
+      - Grab and go patterns, really easy to mess around with and learn from
+    - https://labs.jensimmons.com/
+      - Experimental site layouts and interesting uses of grids. The site itself is a really cool layout done in a surprisingly simple way
+    - http://cssgridgarden.com/
+      - A game with levels that teach you how to use grid. Maybe 30 minutes to finish the game and get a bit better understanding
+  - You can focus on the basics of grid and get a lot of value out of it, you don't need to use the advanced stuff
+  - `grid-template-columns` and `grid-template-rows` define the grid cell sizes. `grid-column-gap` and `grid-row-gap` defines the space between grid cells.
+  - `fr` is a fractional thing, so `1fr` = 100%
+  - If you needed, for example, a 3 column layout with even columns, you could do either `grid-template-columns: 1fr 1fr 1fr;` or `grid-template-columns: repeat(3, 1fr);` That will generate three columns that use up all the space
+  - Can do the same for rows.
+  - You can also declare sizes manually if you wanted, so if you did `80px 1fr 80px` you would see two fixed size rows/columns and one in between that fills the space
+  - Need the number of divs to match the layout you are defining. If you setup a grid with 20 spaces and only have 16 divs, you will have 4 empty spaces
+  - The divs don't necessarily fill the grid space, you can size them independently and they will be fit into the grid based on `justify-items`
+  - You can name areas by defining grid-area in the css. This can be used to really easily layout sites in a sensible way
+    - https://codepen.io/sdras/pen/f79830e540a17a3690ab9a9e103b5256
+  - Can place individual cells more specifically in the layout using `grid-column-start`, `grid-column-end` and `grid-row-start`, `grid-row-end`
+  - Use those values to define essentially the bounding box for the cell. Can either pass in the absolute number, or you can use something like `span 2` to tell it to go across two rows
+  - Alternative syntax: `grid-area: 2 / 3 / span 3 / span 2;`
+  - Standard order is always x, y, x, y
+  - Use `minmax` to declare minimums and maximums for sizes (e.g. `minmax(100px, 1fr)` would declare a cell with minimum size 100px that expands to fill space)
+  - Recommended guide to flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  - Circles can be done using the css property `shape-outside` Not supported in firefox or edge, but can easily do progressive enhancement and make it a square or something instead
+  - Diagonals can be done with manual drawing with an SVG path. Just pick a color and a couple of path points and
+  - Examples on https://webanimationworkshops.com/
+-

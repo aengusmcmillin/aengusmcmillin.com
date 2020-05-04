@@ -3,7 +3,11 @@ title: "Getting Stuff Done Like a Boss"
 aliases: ["Getting Stuff Done Like a Boss"]
 ---
 
-Tags: [[Course]] [[Tiago Forte]] [[GTD]] [[Productivity]]
+- **Metadata**
+
+  - Instructor:: [[Tiago Forte]]
+  - Source:: https://learn.fortelabs.co/p/get-stuff-done-like-a-boss
+  - Tags:: [[Course]] [[GTD]] [[Productivity]]
 
 - **What's a Workflow?**
 - Objectives:

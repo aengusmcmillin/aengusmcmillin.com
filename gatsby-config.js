@@ -147,6 +147,7 @@ module.exports = {
       resolve: "@aengusm/gatsby-theme-brain",
       options: {
         mdxOtherwiseConfigured: true,
+        linkifyHashtags: true,
       },
     },
   ],

@@ -3,7 +3,11 @@ title: "Building a Second Brain Cohort 10"
 aliases: ["basb", "building a second brain"]
 ---
 
-Tags: [[Courses]] [[WIP]] [[Tiago Forte]] [[Personal Knowledge Management]]
+- **Metadata**
+
+  - Instructor:: [[Tiago Forte]]
+  - Source:: https://www.buildingasecondbrain.com/
+  - Tags:: [[Course]] [[Personal Knowledge Management]]
 
 ### Unit 3: Note Taking for Creativity
 
