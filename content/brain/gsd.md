@@ -1,0 +1,53 @@
+---
+title: "Getting Stuff Done Like a Boss"
+aliases: ["Getting Stuff Done Like a Boss"]
+---
+
+Tags: [[Course]] [[Tiago Forte]] [[GTD]] [[Productivity]]
+
+- **What's a Workflow?**
+- Objectives:
+  - Understand key principles of GTD
+  - Create a personalized system using digital tools
+- What is a workflow? A workflow is a series of containers and checklists.
+- Containers to stay organized
+- Checklists to take action
+- **5 Phases of GTD**
+- GTD is: "A toolset toolset to help people focus their energy strategically and tactically without letting anything fall through the cracks"
+- It is about automating as much of productivity as possible so we can focus on the best parts
+- Status quo = crisis response mode, there are psychological benefits that trick us into thinking it is better
+- 5 Phases
+  - **Collect** everything into one place
+  - **Process** each thing to clarify outcomes
+  - **Organize** reminders
+  - **Review** regularly
+  - **Do** the actions
+- ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2FyqQZb7Wdck.png?alt=media&token=fc1c34ee-68de-4d00-ae70-11041f7b15b7)
+- **Open Loops on Your Mind**
+- The first step is to have a comprehensive task list to capture everything
+- Stress is caused by mishandling commitments
+- Uncaptured commitments are called Open Loops
+- Challenge: Every Open Loop needs to be written down, no matter how trivial
+- **How to Capture Open Loops**
+- Start with the inboxes. This can include apps, recorders, task managers, email, etc...
+- 3 Rules:
+  - Every loop must be captured in an inbox
+  - You must have as few containers as possible
+  - You must empty them regularly
+- For step 2, start by installing a task manager
+- Then setup one digital container and one physical one
+- **Unit 3: Processing tasks**
+- 3 rules for processing
+  - Process top item first
+  - Process one at a time
+  - Never put anything back in the inbox
+- First question
+- Second question, is it actionable?
+- If it isn't actionable, send it to trash, someday/maybe, or your reference system
+- Next step is to setup a reference container (in this case Evernote)
+- After this should have a concrete and comprehensive list of tasks that are highly actionable
+- **Let's Get Physical and Specific**
+- What's the next physical action for each item?
+- Physical action because it is hard to decide exactly what needs to be done, whereas focusing on physical actions makes it very concrete
+- Most items in the task manager are actually projects that need to be broken down by several levels and next physical action identified
+- Lots of words used for todo items that are unclear: "set meeting", "decide on", "check out", "organize", etc...

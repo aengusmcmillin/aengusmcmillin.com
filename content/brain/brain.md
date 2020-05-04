@@ -17,6 +17,7 @@ This is all built as a [[Gatsby Theme]]. You can find the source and npm package
 
 ### Changelog
 
+- 05/04/20 Pushing up some updates that have been building up over the last few days. Including new notes on [[BASB]], and a new note on [[Getting Stuff Done Like a Boss]]
 - 04/24/20 Add some [[HTML]] notes
 - 04/21/20 Add my [[WIP]] [[Building a Second Brain Cohort 10]] notes
 - 04/19/20 Add [[Steal Like An Artist]] book notes

@@ -3,7 +3,7 @@ title: "Building a Second Brain Cohort 10"
 aliases: ["basb", "building a second brain"]
 ---
 
-Tags: [[Courses]] [[WIP]]
+Tags: [[Courses]] [[WIP]] [[Tiago Forte]] [[Personal Knowledge Management]]
 
 ### Unit 3: Note Taking for Creativity
 
@@ -34,9 +34,157 @@ Tags: [[Courses]] [[WIP]]
   - Mix of diverse types of media
   - Notes are not optimized for the consumption of others, purely optimized for you
 - Why is it worth it?
+
   - There is a set of knowledge unique to you
   - It is good to treat information gained as an investment rather a fleeting thing
   - There is value in having your own personal library
+
+### Unit 6: Workflow Strategies
+
+- Learn strategies and techniques for using notes to quickly assemble deliverables
+- Our focus thus far has been essentially informational mise en place. Prepping notes and ideas in a way that makes them easy to use
+- ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2FexYJNnQpmL?alt=media&token=0815334d-c4f8-40f1-8f06-54062290adc1)
+- Three pillars of PKM
+  - Knowledge Capture
+  - Digital Organization
+  - Project Management
+- Project management hasn't evolved much over the last decades, despite the completely different digital first world we now live in
+- We should manage projects in a way that leverages the freedom and adaptability of the internet
+- "Creative products are always shiny and new; the creative process is ancient and unchanging" - Silvano Arieti, Creativity: The Magic Synthesis
+- The creative process follows a back and forth between the stages of divergence and convergence
+  - Always start with divergence
+  - Divergence involves exploring ideas, digging into different possibilities, and trying out different pathways
+  - Convergence involves eliminating options, and narrowing down onto something concrete and tangible
+- The work in this course contributes to this process
+  - 12 favorite problems works towards divergence
+  - Project list lies in the middle between the two
+  - This unit "Workflow Strategies" focuses on convergence
+- 12 workflow strategies
+  - Archibelego of ideas
+  - Headings first
+  - Meta Plan
+  - Temporary Tags
+  - Status Summary
+  - Color Commentary
+  - Dial Down the Scope
+  - Context Switch
+  - Function Follows Form
+  - Interlinking Notes
+  - Advanced Search
+  - Table of Contents
+- 1. Archipelago of ideas
+  - Make an outline of key points of deliverable
+  - Do the thinking first, and sit down to create later with more than a blank page
+  - (this is super easy in Roam btw, pretty much the way I write anything nowadays)
+  - "Instead of confronting a terrifying blank page, I'm looking at a document filled with quotes: from letters, from primary sources, from scholarly papers, sometimes even my own notes. It's a great technique for warding off the siren song of procrastination. Before I hit on this approach, I used to lose weeks stalling before each new chapter, because it was just a big empty sea of nothingness. Now each chapter starts life as a kind of archipelago of inspiring quotes, which makes it seem far less daunting. All I have to do is build bridges between the islands." - Steven Johnson, DIY: How to Write a Book
+- 2. Headings First
+  - Use headings to create a map of the deliverable you are creating
+  - Focus on the broad parts and figuring out at a high level what the terrain is you need to navigate
+  - These could look identical regardless of the type of course for example, you could use the exact same map for any 10 unit online course, regardless of content
+- 3. Meta-Plan
+  - Plan the plan
+  - Break down the project into series of easy stepping stones that can allow you to get started on something more concrete
+  - Allows you to complete the project whenever you have the time to make a little progress
+- 4. Temporary Tags
+  - You will be pulling in info from a lot of different notebooks for review
+  - As you search through for information, give it a temporary tag for the project you are working on. This makes it easy to find all of these things again
+  - (Again, this should be quite easy in Roam, need to apply this more heavily)
+  - Tiago goes through every few months and deletes all tags
+- 5. Status Summary
+  - Write a note summarizing where you are at to make it easy to come back to a project later
+  - Treat this like a bookmark added to pick up where you left off
+- 6. Color Commentary
+  - Take notes in your own words, don't focus on verbatim capture, you need to digest the ideas into your own words
+  - Consider separating your own words and summaries from what you have more directly captured. Either make it a different color, or prepend with mw.
+- 7. Dial Down the Scope
+  - Scale down large projects into small components to get feedback and iterate
+  - Rather than focus on an ebook, film, workshop, or mobile app, instead start with a tweetstorm, livestream, or wireframe
+  - Test small ideas and scale up from there, this is a great way to learn more about the field you want to get into, increase your chance of success, and give you concrete stepping stones on the path to your end goal
+- 8. Context Switch
+  - Expose yourself to different locations, devices, people, and times in order to stimulate your brain into thinking differently and being more creative
+  - Sometimes changing the environment is all it takes to get unstuck
+- 9. Function Follows Form
+  - Experiment with the form of what you are creating in order to get ideas and inspiration
+  - Reorder notes in an outline, try grouping and ordering based on date, theme, objective, or whatever else you like
+  - (I need to apply this to design, adjusting layouts in a wireframe could give me good ideas for app development)
+- 10. Interlinking Notes
+  - Link between notes that relate to each other
+  - There should be a web that builds up over time between your notes
+  - (Tiago, are you sure you don't want to just use Roam?)
+- 11. Advanced Search
+  - Filter for notes using specific criteria
+  - Search based on title, notebook, tags, relevant dates, etc...
+  - Compose filters to do powerful queries for exactly what you need
+- 12. Table of Contents
+  - After doing a search, or querying for exactly the notes you need, take that list of notes and turn it into a TOC
+  - You can do this in evernote with "Create Table of Contents Note"
+  - Create these notes for a project, blogpost, or anything else
+  - Add information to each entry with sub bullets or other notes
+- Just-in-case -> Just-in-time
+  - In the past you had to do a lot of work up front and in advance, just in case it is needed
+  - Now that doesn't make sense, you should focus on slowly building up resources so that when the work needs to be done it can go together quickly
+  - We are also moving from a world where things need to be perfect to a world where we need to move fast and iterate on imperfect solutions
+  - Moving from long sessions of deep focus to short sessions creating intermediate packets (not sure I believe this yet, I think it can be right, but some packets require deep focus to create)
+  - Moving from a world by people learn by consumption to a world of interaction where people learn by creating and publishing and sharing
+
+### Unit 7: PKM Canvas
+
+- PKM Canvas is a tool designed to help after you have otherwise forgotten most of this course
+- Summarize the most important points on one piece of paper
+- With the printout it will be a pocket sized guide to the second brain. (I may do this, but will probably just try and do it in Roam)
+- Page 1: Cover. Name and a sketch to help it connect
+- Page 2: Project List related to PKM
+- Page 3: 12 Favorite Problems. Pick ones relevant to PKM
+- Page 4: Default capture methods for top five sources
+- Page 5: Layers of progressive summarization to use
+- Page 6: Project completion checklist
+- Page 7: Workflow Strategies to use, and when
+- Page 8: Top 10 takeaways from the course
+- Make these ideas your own, adapt the canvas to your own needs and system
+- There is no perfect flow chart for this, it will never be a perfect checklist, but it is still valuable to condense the information into one useful place
+
+### Unit 8: The Dawn of the Perspective Era
+
+- Zooming out to look at the history of value creation
+- 01: The space era
+  - Mercantilism, oil, steel, railroads
+  - Zero sum game. All about conquest.
+  - Eventually we ran out of space
+- 02: The time era
+  - "Time is money"
+  - All about turning disposable time into money
+  - Eventually we ran out of time
+- 03: The attention era
+  - Creative class
+  - Attracting eyeballs over and over again
+  - Around now we are running out of attention
+- 04: The perspective era
+  - We are seeing the rise of a focus on our lives, treat ourselves as a startup of one
+  - A lot of wisdom is needed to handle this, that wasn't necessary when we could just clock in
+- Previously, everything was organized into containers. Info into books, education into classes, work into companies, and people into professions.
+- Moving more into streams. We are managing streams of experiences, feeds, relationships, and ideas, all intermingling
+- Need to combine containers and streams more effectively. Right now we aren't managing this well, which leads to the sense of overwhelm
+- Container thinking funnels everything through the brain and creates a bottleneck
+- Stream thinking allows you to be a curator of the streams and build systems that capture the ideas flowing by
+- Situational awareness is key, it is more important to have a rough idea of what is out there and when it is used, rather than exactly how to use it. Need to train this skill over time.
+- This course is about building the skills needed to live in a stream based world. GTD to capture things that need to be done, progressive summarization to turn past research into a more usable form, PARA to structure information for long term management, and J-I-T Project Management to effectively execute against all of the above
+- In a scarcity mindset we begin seeing our strengths as a hammer and treat everything as a nail. This becomes a constraint that can hold us back. We need to be able to abandon our identity based on our strengths in order to improve. We must evolve our approach and continue to adapt if we want to succeed.
+- Food as thought metaphor. We need food/information to live. But we don't need any particular food/information. There is no specific source of information or crucial fact that we need. We just need to immerse ourselves in the right streams and have good throughput.
+- Perfection should be undesired. If a system needs perfection, it is fundamentally flawed.
+- "Chase what excites you" - Tim Ferriss
+
+### Toyota Design Thinking Case Study
+
+- (Several examples in here are referring to the Workflow Strategies above)
+- Challenge was to create a full day workshop in two days using only pre-existing information that was already available
+- Began by planning the plan. Creating an outline of exactly what he would need to look for in Google Drive, Dropbox, and Evernote. Everything from slide decks, information sources, and prior communications with that client.
+- Afterwards pulled together his pre-existing information into a Table of Contents so that he could easily process through and use the information that he needed
+- Then, applying Headings First allowed him to lay out a trail of everything that would need to be covered to have a deliverable product
+- Added temporary tags to the notes that he used for this project, allowing him to find what he referenced, and avoid retreading prior work
+- Applied Archipelago of Ideas, creating a single note that he would write out all the details of the workshop, isolating the work needed into one place and work solely there
+- Induced an inflection point of success by context switching. During a flight he took the information he already had and did what needed to be done, and realized he didn't need to do any more gathering of information. He flipped the switch from divergence to convergence.
+- He knew the form and constraints of his workshop, and used that to inform everything else
+- He regularly interlinked notes to speed up his process
 
 ### Live Session 1
 
@@ -86,6 +234,7 @@ Tags: [[Courses]] [[WIP]]
   - Student group on Wednesday
   - Couple of other things to do, all this will be on teachable
 - Q&A
+
   - Q: What apps to use?
   - A: Consider starting with Evernote. You will be using a variety of different apps for different purposes, but Evernote is one of the best for capture.
   - Q: Handwritten Notes?
@@ -151,6 +300,7 @@ Tags: [[Courses]] [[WIP]]
   - Finish project list
   - Finish PARA setup
 - Q&A
+
   - Q: How to scope your projects?
   - A: Keep breaking them down until it is clear and obvious what you should do next
   - Q: How to differentiate between tasks and projects?
@@ -395,9 +545,109 @@ Tags: [[Courses]] [[WIP]]
 - Add a gratitude list for the projects. What am I grateful for having finished a project?
 - Just try to be a few percent better every time
 - Action Steps:
+
   - Add default capture steps to top 5 sources
   - Watch unit 6 lecture video on JIT project management
   - Watch case study 5 on Long Form Writing
+
+### Live Session 8.5
+
+- Three more calls left before the end
+- Starting with a poll. Lots of people want more case studies and walkthroughs of apps
+- Overview of what we have covered and all the milestones of the course
+  - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2FusVvrn5kW1?alt=media&token=76da1696-8942-4c4a-bc0c-fcf896c4bea9)
+- Almost all of these milestones should be a note in your second brain, you shouldn't need to be tracking those things in your head, you should have something you can easily reference to keep you on track
+- Now talking about Workflow Strategies (see notes from Unit 6 above, I won't be repeating all of that)
+  - The rest of BASB can be very similar between all types of professionals, but in workflow strategies this is where things get a little fuzzier and more dependent on what you do and what relies on your creativity
+  - Originally evaluated more than 50 ideas for these strategies and then paired it down to 12
+- Today will be doing a walkthrough of a project and how you would apply the workflow strategies
+  - Project: Investing in his brothers company
+  - Starts with ~15 notes accumulated before even building a plan or outline
+  - The first not was an informal note taken while him and his brother were on a call
+  - Starts by progressively summarizing to pull out the value from it. During that process he bolds, indents, adds new headings, etc..
+  - Thinking of this from a marketing perspective. As he goes he is building up essentially a marketing pitch right in this first note
+  - Information from a variety of different sources, in some cases a note is just a text
+  - Merges small bits of information into other notes and then deletes theo riginal note
+  - Pulls in notes from research
+  - Adds context and learnings as he summarizes
+  - Captures interesting vocabulary
+  - Created a Table of Contents for the notebook from every note. Added todos to some of the notes.
+  - Linked between notes to pull in context where useful
+  - Captures a wide variety of things, showed even that he captured a screenshot of an FB ad that is relevant
+  - Captures color commentary for that fb ad at the top of the page
+  - Can turn the TOC into the Meta Plan. Sometimes the first big thing you need to do is just go through all of the notes!
+  - It is an incredibly lightweight first pass. It doesn't have to take much time.
+  - Always starts with a list and uses that list to generate the next list
+  - This enables constant pivoting between different things. This project can live in the background and still have constant progress
+- Tiago sometimes keeps tasks in Evernote instead so that it remains compartmentalized. If it isn't central to his work, it is better to have it live in this one notebook so he can ignore it until the couple hours a week he spends on it
+- Make a firm decision and have it live in task manager or evernote, not both
+- There will be media library entries with more about all of these things
+- Picasso's Bull as an example of decompression and then compression. You can capture the essence of a thing in an incredibly simplified way
+  - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2F-Udp_FNurv?alt=media&token=442829e2-4649-4a46-adf8-99ee4f503d4e)
+- These sort of strategies and systems are used often by artists
+  - Start with structure, then fill in detail
+  - Start broad, and go finer and finer
+- These strategies should all be easy, if they feel hard you are overthinking it
+- Action Steps
+  - Watch unit 7 on PKM Canvas
+  - Watch unit 8 on The Big Picture
+  - Apply at least 5 workflow strategies for your capstone project
+
+### Live Session 9
+
+- We are done with almost all of the material. Now we are going to bring everything back together
+- Last time we went over divergence for a project with a demo in ~30 minutes, and Tiago did another 30 minutes over the weekend, and that was it! Now we will go over what convergence looks like.
+- Best to minimize time on divergence to make things easier for convergence.
+- "How can I use as few sources as possible, make this convergence as short and concise as possible"
+- Convergence demo
+  - After diverging and reviewing all notes, action steps are now listed for everything needed for convergence
+  - Separate out the divergence plan and starts writing out convergence notes above. In this case begins by listening the deliverables that will be needed for the project
+  - Deliverables can include posts, websites, emails, descriptions, etc...
+  - A large part of this is the fact that projects should be kept small. Keep the projects small, and the number of deliverables low. In this case, just one launch post and a basic website.
+  - Consider adding in just enough details to filter out bad customers, and hook the good ones
+  - Goes through and moves relevant notes into where they would fit in with the deliverables. So move research things under the launch post, photos under the website, etc...
+  - The core of this process is to treat everything fluidly. Move things, rename them, group them, add headings. All the same stuff can be used in many different ways with a bit of shuffling
+  - Once the plan is done he can open the relevant notes and begin outlining his deliverables.
+  - He is still copying at this point, he wants to wait until the very last minute to actually write using his own words, making sure the logic and argument is rock solid before he does the hard part
+  - Hard to take notes on all of this demo, but basically he keeps moving, restructuring, pulling in, rephrasing, and adding notes for himself as he develops these deliverables. And he repeats this for all of the notes that he had built up during divergence.
+  - He doesn't need to solve every problem up front, this is about constantly working towards the minimum viable next step to make the best forward leap
+  - After building out the outline, he opens Google Docs, puts it side by side with Evernote, and begins writing
+  - Think simple, work in sprints, focus on minimal viable deliverables
+- The convergence phase is made so much easier when applying the different workflow strategies. He can take something that can seem crazy ambitious (start a business), break it down into smaller chunks, and build those out in a relatively easy way
+- Now talking about Unit 8
+- Some of the highest skill jobs are beginning to be automated. Computers are good at managing lots of information.
+- Jobs are protected by the ability to convey a particular interpretation of information
+- The human perspective is the most important thing we can provide
+- Every company will need to have a point of view. Bland marketing won't work anymore, memes and opinions are key
+- ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Faengusm%2F85LeroUiuo.png?alt=media&token=1134d8a1-c23c-49d8-9066-d08b4e2d33f3)
+- 4 Stages of Mastery
+  - Unconscious Incompetence. Not even knowing what you aren't good at.
+  - Conscious Incompetence. Knowing about a thing and knowing you aren't good at it. You are aware there is a problem.
+  - Conscious Competence. You are actively working towards mastering a process, you have a sense of how to improve.
+  - Unconscious Competence. You can just do the thing, you don't even need to be aware of it to be good at it, it just happens. We are unconsciously competent at walking and breathing.
+- Don't worry if we aren't happy with where we are in the system yet. Just be there and embrace that stage of mastery.
+- If we are at stage 2, embrace it, write about the things that aren't working, the questions we haven't answered, and the problems we still need to address
+- If you are in stage 3, just keep working on it, massage the system and let it become part of you. This is a great spot to be, just need to make it a habit and tweak some things
+- Stage 4 is great, this is where you will start to see the serendipity. You should see lots of great results coming from the system at this point.
+- Homework for Wednesday
+  - Complete the [[PKM Canvas]]. Take the time to do a mini-convergence to fill this out. This will be an opportunity for me to summarize my notes, extract value from prior homework, and pull together the highlights there. (I will also be taking this exercise to write a blog post about my takeaways)
+  - Watch Case Study on Business Development
+- Post Course: Two week implementation period. Mentors and teachers will be sticking around to help with projects, take a few more calls, and potentially do some coaching
+- **Q&A**
+  - Q: What happens for next cohort?
+  - A: There will be an email opt in before it
+  - Q: Spending too much time on BASB, less time on actual work
+  - A: This is a phase, it takes time up front and eventually the returns will be worth it. Also a sign you aren't doing things Just In Time. Things should be postponed if possible.
+  - Aside with logistics questions and talk about different courses
+  - Q: How to pick up from where you left off
+  - A: Apply the Status Summary workflow strategy. Always recognize that there might be some decent chunk of time before you revisit something, and give yourself a note for when you come back.
+  - Also, try to finish every work session with a concrete deliverable. Treat a work session as the most important unit of work, and make sure it pays off. You need to converge at the end of the work being done. Close the loop. It is a huge benefit to mindset and how you feel.
+  - Q: Chase what excites you, without chasing the next shiny thing?
+  - A: It's a challenge. https://foursightonline.com/  is a paid quiz that tells you what parts of the creative process are your strengths vs weaknesses. Some folks have trouble starting things, others have trouble finishing. Need to find ways to prevent your strengths from becoming weaknesses. And work on fixing your weaknesses.
+  - Tiago talks about using money to keep himself accountable. He won't do a partnership with someone without money changing hands. He either pays them, or is paid by them. He knows this won't work for everyone, but when you can it is a great way to adjust mindset.
+  - He also uses negative opinions from others to push himself. He uses the desire to prove people wrong to his advantage.
+  - Q: How do you organize sprints?
+  - A: He lets the project dictate it. He doesn't try to plan beyond the thing he can see, he would rather keep moving forward and decide what is next as he goes
 
 ### Office Hours 1
 
