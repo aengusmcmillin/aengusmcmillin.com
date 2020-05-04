@@ -68,7 +68,7 @@ module.exports = {
              {
               notes: allFile(
                 filter: {
-                  sourceInstanceName:{ in: ["notes","posts"] }
+                  sourceInstanceName:{ in: ["posts"] }
                   relativePath: { glob: "**/*.{md,mdx}" }
                 }
                 sort: { fields: childMdx___frontmatter___date, order: DESC }
@@ -134,13 +134,6 @@ module.exports = {
       options: {
         path: "content/posts/",
         name: "posts",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: "content/notes/",
-        name: "notes",
       },
     },
     {

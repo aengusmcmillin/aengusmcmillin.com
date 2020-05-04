@@ -6,26 +6,6 @@ exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      notes: allFile(
-        filter: {
-          sourceInstanceName: { eq: "notes" }
-          relativePath: { glob: "**/*.{md,mdx}" }
-        }
-        sort: { fields: relativePath, order: DESC }
-      ) {
-        nodes {
-          id
-          relativePath
-          childMdx {
-            frontmatter {
-              title
-              slug
-              author
-              published
-            }
-          }
-        }
-      }
       posts: allFile(
         filter: {
           sourceInstanceName: { eq: "posts" }
@@ -56,20 +36,6 @@ exports.createPages = async ({ actions, graphql }) => {
       context: {
         slug: node.childMdx.frontmatter.slug,
         postPath: node.childMdx.frontmatter.slug,
-      },
-    });
-  });
-
-  const notes = result.data.notes.nodes;
-  notes.forEach((note) => {
-    var slug = note.childMdx.frontmatter.slug;
-    var path = `notes/${slug}`;
-    createPage({
-      path: path,
-      component: require.resolve(`./src/templates/note.js`),
-      context: {
-        slug: slug,
-        postPath: path,
       },
     });
   });
