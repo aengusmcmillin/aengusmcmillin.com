@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer";
 import SEO from "../components/SEO";
+import Newsletter from "../components/Newsletter";
 
 const BlogLayout = styled(Layout)`
   margin: 5em auto 6rem;
@@ -75,6 +76,7 @@ export default function PostTemplate({ data: { mdx }, pageContext }) {
           <a href="https://twitter.com/aengusmcmillin">Twitter</a> or{" "}
           <a href="mailto:hello@aengusmcmillin.com">Email</a>.
         </p>
+        <Newsletter />
       </Blog>
     </BlogLayout>
   );
