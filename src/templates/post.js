@@ -67,8 +67,8 @@ export default function PostTemplate({ data: { mdx }, pageContext }) {
           If you enjoyed this post, consider signing up for my newsletter. Every
           week The Wednesday Writeup will come to you with an update on what I
           have been working on and thinking about, as well as recommendations
-          for things to read and watch. You can check out the backlog at{" "}
-          <a href="https://aengus.substack.com">aengus.substack.com</a>.
+          for things to read and watch. You can check out the backlog and sign
+          up at <a href="https://aengus.substack.com">aengus.substack.com</a>.
         </p>
         <p>
           I don't have comments on this site, but I would also greatly
@@ -76,7 +76,6 @@ export default function PostTemplate({ data: { mdx }, pageContext }) {
           <a href="https://twitter.com/aengusmcmillin">Twitter</a> or{" "}
           <a href="mailto:hello@aengusmcmillin.com">Email</a>.
         </p>
-        <Newsletter />
       </Blog>
     </BlogLayout>
   );
