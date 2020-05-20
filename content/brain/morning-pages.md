@@ -2,6 +2,7 @@
 title: "Morning Pages"
 ---
 
+- Morning Pages is a habit [originating from The Artist's Way](https://juliacameronlive.com/basic-tools/morning-pages/) used to start the day off strong
 - The goal of morning pages is to get the day started by spitting out three pages (or about 750 words) of random thoughts, questions, and concerns that come to mind. It isn't meant to be a structured process, it is really meant to allow ideas to flow and stimulate more ideas.
 - So far, my experiences have been pretty good. I do this in Roam by capturing the start and end times and using the `{word-count}` syntax to track. Then I try to get to about 750 words, although some days it is less and some days more.
 - I will also take this time to capture todos and tag them with the current date, which helps to show them in the bottom of the daily note. 
