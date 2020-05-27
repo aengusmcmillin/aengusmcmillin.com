@@ -17,6 +17,7 @@ This is all built as a [[Gatsby Theme]]. You can find the source and npm package
 
 ### Changelog
 
+- 05/26/20 Added a [[Guides]] section
 - 05/11/20 Started reading [[Letters from a Stoic]], will upload notes as I go
 - 05/04/20 Pushing up some updates that have been building up over the last few days. Including new notes on [[BASB]], and a new note on [[Getting Stuff Done Like a Boss]]
 - 04/24/20 Add some [[HTML]] notes
