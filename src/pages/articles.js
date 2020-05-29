@@ -1,15 +1,14 @@
-import React from "react"	
-import { StaticQuery, graphql, Link } from "gatsby"	
-import styled from '@emotion/styled'	
+import React from "react";
+import { StaticQuery, graphql, Link } from "gatsby";
+import styled from "@emotion/styled";
 import Layout from "../components/Layout";
 
-const AllPosts = styled.div`	
-`;	
+const AllPosts = styled.div``;
 
-const Post = styled(Link)`	
-  display: block;	
-
-`;	
+const Post = styled(Link)`
+  display: block;
+  margin-bottom: 45px;
+`;
 
 const PostTitle = styled.h3`
   color: #333333;
@@ -28,16 +27,19 @@ const PostDate = styled.div`
   color: #888888;
 
   ${Post}:hover & {
-    color: #AAAAAA;
+    color: #aaaaaa;
   }
-`
+`;
 
-const ArticlesPage = ({data}) => {
-  let nodes = data.posts.nodes
+const ArticlesPage = ({ data }) => {
+  let nodes = data.posts.nodes;
   nodes.sort((a, b) => {
-    return Date.parse(b.childMdx.frontmatter.sortDate) - Date.parse(a.childMdx.frontmatter.sortDate)
-  })
-  const Posts = nodes.map(node => (
+    return (
+      Date.parse(b.childMdx.frontmatter.sortDate) -
+      Date.parse(a.childMdx.frontmatter.sortDate)
+    );
+  });
+  const Posts = nodes.map((node) => (
     <Post to={node.childMdx.frontmatter.slug}>
       <PostTitle>{node.childMdx.frontmatter.title}</PostTitle>
       <PostDate>{node.childMdx.frontmatter.displayDate}</PostDate>
@@ -49,7 +51,7 @@ const ArticlesPage = ({data}) => {
       <AllPosts>{Posts}</AllPosts>
     </Layout>
   );
-}
+};
 
 export const query = graphql`
   query {
@@ -76,4 +78,4 @@ export const query = graphql`
   }
 `;
 
-export default ArticlesPage
+export default ArticlesPage;

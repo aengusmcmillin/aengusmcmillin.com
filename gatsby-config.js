@@ -17,6 +17,25 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Rubik`,
+          },
+          {
+            family: `Karla`,
+          },
+          {
+            family: `Roboto`,
+          },
+          {
+            family: `Domine`,
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.ANALYTICS_TRACKING_ID,

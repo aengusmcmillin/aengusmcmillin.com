@@ -1,7 +1,7 @@
 export default {
-  sizeSm: "16px",
-  sizeMd: "18px",
-  default: "Arial",
+  sizeSm: "1.1rem",
+  sizeMd: "2rem",
+  default: "Karla, sans-serif",
   code: "14px",
-  heading: "Helvetica"
+  heading: "Rubik, sans-serif",
 };

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Global, css } from '@emotion/core';
-import { colors, media, fonts } from '../../tokens';
+import React from "react";
+import { Global, css } from "@emotion/core";
+import { colors, media, fonts } from "../../tokens";
 
 export default () => {
   return (
@@ -11,7 +11,7 @@ export default () => {
           color: ${colors.text};
           font-family: ${fonts.default};
           font-size: ${fonts.sizeSm};
-          line-height: 1.45;
+          line-height: 1.5;
           text-decoration-skip: ink;
           @media ${media.medium} {
             font-size: ${fonts.sizeSm};
@@ -25,8 +25,10 @@ export default () => {
         h5,
         h6 {
           color: ${colors.darkText};
-          margin: 35px auto 15px;
+          margin: 35px auto 10px;
           border-bottom: 2px dashed #ebebeb;
+          font-family: ${fonts.heading};
+          line-height: 1.4;
         }
 
         h1 {
@@ -70,7 +72,25 @@ export default () => {
         }
 
         li + li {
-          margin-top: .5rem;
+          margin-top: 0.5rem;
+        }
+
+        pre {
+          width: 100%;
+          max-width: 600px;
+          overflow-x: auto;
+        }
+
+        pre:hover,
+        pre:focus {
+          min-width: min-content;
+        }
+
+        code {
+          font-family: Consolas, "Andale Mono WT", "Andale Mono",
+            "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+            "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
+            Monaco, "Courier New", Courier, monospace;
         }
       `}
     />

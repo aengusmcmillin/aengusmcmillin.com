@@ -1,14 +1,12 @@
-import React from "react"	
-import { StaticQuery, graphql, Link } from "gatsby"	
-import styled from '@emotion/styled'	
+import React from "react";
+import { StaticQuery, graphql, Link } from "gatsby";
+import styled from "@emotion/styled";
 
-const AllPosts = styled.div`	
-`;	
+const AllPosts = styled.div``;
 
-const Post = styled(Link)`	
-  display: block;	
-`;	
-
+const Post = styled(Link)`
+  display: block;
+`;
 
 export default () => (
   <StaticQuery
@@ -35,8 +33,8 @@ export default () => (
         }
       }
     `}
-    render={data => {
-      const Posts = data.posts.nodes.map(node => (
+    render={(data) => {
+      const Posts = data.posts.nodes.map((node) => (
         <Post to={node.childMdx.frontmatter.slug}>
           <h3>{node.childMdx.frontmatter.title}</h3>
           <PostDate>{node.childMdx.frontmatter.date}</PostDate>
@@ -46,4 +44,4 @@ export default () => (
       return <AllPosts>{Posts}</AllPosts>;
     }}
   />
-); 
+);
