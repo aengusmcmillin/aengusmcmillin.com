@@ -2,19 +2,28 @@ import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
 import styled from "@emotion/styled";
 import Layout from "../components/Layout";
+import { colors } from "../tokens";
 
 const AllPosts = styled.div``;
 
 const Post = styled(Link)`
   display: block;
   margin-bottom: 45px;
+
+  p {
+    color: ${colors.gray800};
+  }
+
+  :hover p {
+    color: ${colors.gray500};
+  }
 `;
 
 const PostTitle = styled.h3`
-  color: #333333;
+  color: ${colors.orange800};
 
   ${Post}:hover & {
-    color: #777777;
+    color: ${colors.orange500};
   }
 `;
 
@@ -24,10 +33,10 @@ const PostDate = styled.div`
   margin-top: -10px;
   margin-bottom: 15px;
   font-size: 11pt;
-  color: #888888;
+  color: ${colors.gray500};
 
   ${Post}:hover & {
-    color: #aaaaaa;
+    color: ${colors.gray400};
   }
 `;
 
