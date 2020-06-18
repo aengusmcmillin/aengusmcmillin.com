@@ -23,11 +23,18 @@ const Nav = styled.nav`
 
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 44em) {
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 const NavItemContainer = styled.div`
   display: flex;
   margin: 0;
+  padding: 0px;
 `;
 
 const NavLink = styled(Link)`
@@ -40,9 +47,10 @@ const NavLink = styled(Link)`
 const TitleLink = styled(NavLink)`
   display: flex;
   align-items: center;
+  padding: 0px;
 `;
 
-const TitleText = styled('span')`
+const TitleText = styled("span")`
   display: block;
   font-size: 1.3rem;
   margin: 0;
@@ -62,7 +70,6 @@ const Square = styled("div")`
     background: ${colors.orange400};
   }
 `;
-
 
 export default () => (
   <Header>
