@@ -32,7 +32,7 @@
     "gatsby-remark-embed-video": "^2.0.1",
     "gatsby-remark-images": "^3.1.42",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-remark": "^2.6.48",
+    "gatsby-transformer-remark": "^5.25.1",
     "mkdirp": "^0.5.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
